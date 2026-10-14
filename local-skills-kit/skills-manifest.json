@@ -1,0 +1,2080 @@
+{
+  "format_version": 1,
+  "groups": [
+    {
+      "repo": "Norman-bury/research-writing-skill",
+      "commit": "6f7959554b4614d879d79cb4ece9ed04a7c8a88c",
+      "mode": "research",
+      "skills": [
+        {
+          "directory": "research-writing-assistant",
+          "name": "research-writing-assistant",
+          "description": "Use when writing academic papers, theses, or research articles - supports brainstorming, chapter writing, literature review, and LaTeX output",
+          "sha256": "53e605e10c06dff2df87be260d5642d7de1c8e833403b6e0312ff864a7997586"
+        },
+        {
+          "directory": "brainstorming-research",
+          "name": "brainstorming-research",
+          "description": "Use before writing any paper - clarifies paper type, discipline, topic, methodology, and chapter structure through natural dialogue",
+          "source_path": "skills/brainstorming-research"
+        },
+        {
+          "directory": "environment-setup",
+          "name": "environment-setup",
+          "description": "Use when Python environment setup is needed for data visualization or conda installation is required",
+          "source_path": "skills/environment-setup"
+        },
+        {
+          "directory": "evidence-driven-writing",
+          "name": "evidence-driven-writing",
+          "description": "Use when writing or revising Introduction, Related Work, background, literature synthesis, or any section where references must drive claims",
+          "source_path": "skills/evidence-driven-writing"
+        },
+        {
+          "directory": "experiment-results-planning",
+          "name": "experiment-results-planning",
+          "description": "Use when designing experiments, result tables, mock planning data, evaluation protocols, or results sections before real data are final",
+          "source_path": "skills/experiment-results-planning"
+        },
+        {
+          "directory": "figures-diagram",
+          "name": "figures-diagram",
+          "description": "Use when creating flowcharts, architecture diagrams, or conceptual diagrams - generates prompts for image AI",
+          "source_path": "skills/figures-diagram"
+        },
+        {
+          "directory": "figures-python",
+          "name": "figures-python",
+          "description": "Use when creating data visualizations for papers - generates publication-quality plots with top-journal color schemes",
+          "source_path": "skills/figures-python"
+        },
+        {
+          "directory": "latex-output",
+          "name": "latex-output",
+          "description": "Use when user requests LaTeX format output or has provided school/journal LaTeX templates",
+          "source_path": "skills/latex-output"
+        },
+        {
+          "directory": "paper-orchestration",
+          "name": "paper-orchestration",
+          "description": "Use when a research-writing task spans multiple sections, medium-sized revisions, full-paper drafting, or repeated quality failures",
+          "source_path": "skills/paper-orchestration"
+        },
+        {
+          "directory": "prompts-collection",
+          "name": "prompts-collection",
+          "description": "Use for translation, polishing, or de-AI-ification of academic text - provides ready-to-use prompt templates",
+          "source_path": "skills/prompts-collection"
+        },
+        {
+          "directory": "using-research-writing",
+          "name": "using-research-writing",
+          "description": "Use when starting any research writing task - establishes workflow and routes to appropriate skills",
+          "source_path": "skills/using-research-writing"
+        },
+        {
+          "directory": "verification",
+          "name": "verification",
+          "description": "Use when about to claim work is complete, a chapter is finished, or references are verified - requires running verification commands and confirming output before making any success claims",
+          "source_path": "skills/verification"
+        },
+        {
+          "directory": "writing-chapters",
+          "name": "writing-chapters",
+          "description": "Use when writing paper chapters - requires completed brainstorming, writes one chapter at a time with user confirmation",
+          "source_path": "skills/writing-chapters"
+        },
+        {
+          "directory": "writing-core",
+          "name": "writing-core",
+          "description": "Use when writing or revising academic papers, especially Chinese journal manuscripts, that need natural prose, de-AI-ification, Markdown formatting, or quality checks",
+          "source_path": "skills/writing-core"
+        },
+        {
+          "directory": "writing-humanities",
+          "name": "writing-humanities",
+          "description": "Use when writing humanities or social science papers - provides discipline-specific writing guidance",
+          "source_path": "skills/writing-humanities"
+        },
+        {
+          "directory": "writing-law",
+          "name": "writing-law",
+          "description": "Use when writing law papers - provides legal writing conventions, citation formats, and argumentation guidance",
+          "source_path": "skills/writing-law"
+        },
+        {
+          "directory": "writing-medical",
+          "name": "writing-medical",
+          "description": "Use when writing medical, biological, or clinical research papers - provides IMRaD structure and reporting guidelines",
+          "source_path": "skills/writing-medical"
+        }
+      ]
+    },
+    {
+      "repo": "zLanqing/codex-claude-academic-skills",
+      "commit": "7ed6377f0efb6a38951b48ef03b19d996e454b1f",
+      "mode": "normal",
+      "skills": [
+        {
+          "directory": "scientific-toolkit-skill",
+          "name": "scientific-toolkit-skill",
+          "description": "Research computing toolkit for optoelectronic information science and engineering, MATLAB/Octave, Python scientific analysis, signal processing, image processing, statistics, simulation, optimization, publication figures, sensor/time-series data, citation lookup, and common scientific libraries. Use when the user asks for MATLAB code, scientific Python, data analysis, plots, simulations, formulas, statistics, machine learning, optical/physical/materials computation, or reproducible research workflows.",
+          "sha256": "f3806f059a102446776fe8e15a492fed76af0483a4336e4d034e239e4243abb3"
+        }
+      ]
+    },
+    {
+      "repo": "Yuan1z0825/nature-skills",
+      "commit": "7d5f160ebfe8033375b4afef7c5911aa4203c983",
+      "mode": "normal",
+      "skills": [
+        {
+          "directory": "nature-academic-search",
+          "name": "nature-academic-search",
+          "description": "Search literature across sources, verify or manage citations, and build MeSH strategies or citation-impact audits. Use for 文献检索、引文核对、参考文献管理、严格他引 and evidence-backed citer profiles; not for translating a paper or drafting manuscript prose.",
+          "sha256": "3ed327e3e9c56cddfaa0e48ffb3503b1f9e27f917916013798ef57bf8131101a"
+        },
+        {
+          "directory": "nature-citation",
+          "name": "nature-citation",
+          "description": "Find and verify Nature/CNS-family literature supporting manuscript claims, with claim-to-source mapping and reference-manager export. Use for Nature系列引用、CNS支撑文献、分段补引用 when this journal scope is requested; use broader literature search for unrestricted sources.",
+          "sha256": "f0436639c2bcf966e8f8cdda6e06501b396bb32cc3b7cce57f67eb0cd7b5a44d"
+        },
+        {
+          "directory": "nature-data",
+          "name": "nature-data",
+          "description": "Draft or audit manuscript Data/Code Availability statements, dataset access routes, repository plans, and FAIR metadata. Use for 数据可用性声明、数据共享、数据仓库选择 and dataset citations; not general data cleaning or statistical analysis.",
+          "sha256": "4ef9c383411b069265901e9f157cb4d73861f42f6ddd28611084005e67eafa43"
+        },
+        {
+          "directory": "nature-downloader",
+          "name": "nature-downloader",
+          "description": "Use when a user needs lawful academic full text, CNKI institutional access, English OA retrieval, publisher API access, institutional browser fallback, or supporting information downloads.",
+          "sha256": "0351f9069e77a4b027893592d295f3c511301bc7d2ec7d299ab49ee2c106be54"
+        },
+        {
+          "directory": "nature-experiment-log",
+          "name": "nature-experiment-log",
+          "description": "标准化实验日志记录——直接上传或读取本地图片、语音和文字，产出带 YAML frontmatter 的 Markdown；可选集成飞书 CLI 与 Obsidian。",
+          "sha256": "1f7fffcbc950d4f60fcb5ad9f2aabe82246ebbd83bf29621a0e90c9ff4ec4b8b"
+        },
+        {
+          "directory": "nature-figure",
+          "name": "nature-figure",
+          "description": "Create, revise, audit, and export manuscript scientific figures in Python or R. Use for 论文配图、科研绘图、多面板图 and submission-ready plots, or explicitly requested AI-generated graphical abstracts and mechanism schematics. Not for interactive dashboards, data cleaning, or statistics-only analysis.",
+          "sha256": "46f2cf74d473604ff9ad884893bbe2360b3431fec631009fce5c487945acf652"
+        },
+        {
+          "directory": "nature-image2ppt",
+          "name": "nature-image2ppt",
+          "description": "Reconstruct slide images, screenshots, scanned PDFs, or image-only PPTX files as object-level editable PowerPoint. Use for 图片转可编辑PPT、截图还原PPT and diagram reconstruction; not authoring a new deck from research notes.",
+          "sha256": "0b49331f7b97e0751248c84506cada638f29ff44bb3023686f89a9f858748e9e"
+        },
+        {
+          "directory": "nature-literature-pipeline",
+          "name": "nature-literature-pipeline",
+          "description": "Complete automated literature discovery pipeline: multi-source search → six-dimension scoring → fine reading → formatted delivery → archival.\nCombines a configurable engine with daily cron-driven application layer. Works with Feishu, Telegram, or any messaging platform.\n",
+          "sha256": "1dcaa692457ec9c2be409cb7777f834a2db833788b2e9b680baf0e961126b01a"
+        },
+        {
+          "directory": "nature-paper-card",
+          "name": "nature-paper-card",
+          "description": "Build a structured deep-reading Paper Card for one scientific paper, analysing methods, experiment-to-claim evidence, limitations, and research ideas. Use for 论文精读卡、方法拆解、证据链分析; not full-paper bilingual translation or formal peer review.",
+          "sha256": "a71e3dbc446523e415ed4b896bed8ea60e0c598fb8655c587679d719648b68c9"
+        },
+        {
+          "directory": "nature-paper-to-patent",
+          "name": "nature-paper-to-patent",
+          "description": "Turn research papers or inventor materials into evidence-grounded Chinese invention patent drafts and technical disclosures. Use for 技术交底书、专利撰写、现有技术对比 and Chinese DOCX patent packages; not general manuscript writing.",
+          "sha256": "b65243157addf3e4e38de4cb35136d95478c2c997bdd5600e6ae21f91f4d06f0"
+        },
+        {
+          "directory": "nature-paper-trans",
+          "name": "nature-paper-trans",
+          "description": "将英文论文 PDF 的指定页面或全文逐页翻译为简体中文图片型 PDF，尽量保留原文的版式、分栏、图表和公式；最终仅交付中文 PDF。用于论文阅读翻译，不用于可编辑 Word 重建或逐字审校。",
+          "sha256": "f340351f110b67d37a7b272b81c15740ec4863e125698a817d68b8b27866a7fe"
+        },
+        {
+          "directory": "nature-paper2ppt",
+          "name": "nature-paper2ppt",
+          "description": "Create or improve a Chinese academic PPTX from a scientific paper or research reading notes, with source figures and speaker notes. Use for 论文做PPT、文献汇报、组会PPT and paper-based conference or defense presentations.",
+          "sha256": "a8d0fd14ca0863602cfc76305467d0f5a6ac2c104abedd7f7e86dfcf46bf04cf"
+        },
+        {
+          "directory": "nature-polishing",
+          "name": "nature-polishing",
+          "description": "Polish, translate, or tighten existing academic prose while preserving facts, terminology, and evidence boundaries. Use for 论文润色、学术翻译、正文精简, or manuscript LaTeX layout fixes. Use nature-writing when the main task is drafting new sections or rebuilding the manuscript argument.",
+          "sha256": "9391b2a2487306cf2ed560377d4bc10c339fd2c220a79db278cb7f9d31e79023"
+        },
+        {
+          "directory": "nature-proposal-writer",
+          "name": "researchwrite",
+          "description": "Compose, revise, or audit research proposals, opening reports, and research plans from supporting evidence. Use for 研究计划、开题报告、科研项目申请书. Invoked as researchwrite for compatibility; use nature-writing for general manuscript sections.",
+          "sha256": "9be8ae52f909969592529414fb6f5bb54059c8cbe520e78b53d22b297cef5e4a"
+        },
+        {
+          "directory": "nature-reader",
+          "name": "nature-reader",
+          "description": "Create source-grounded Chinese-English paper readers with aligned text, figures, tables, and equations. Use for 全文翻译、中英文对照、论文精读 or source-linked questions about a paper; respect a requested excerpt or question without generating a full reader.",
+          "sha256": "999a5c1b116558133d0389ce6c1bbc3dc9cf5242d1be2870358789769d97a84e"
+        },
+        {
+          "directory": "nature-ref-verifier",
+          "name": "nature-ref-verifier",
+          "description": "对学术文献逐条执行多源交叉验证，逐字段对比作者、标题、年份、卷期、页码， 标记卷年/DOI年冲突、作者顺序异常、页码偏差等问题，输出结构化验证报告。 可批量处理整篇论文/开题报告的参考文献列表，也可单条校验，支持与 Zotero 同步修正。",
+          "sha256": "6a975074d7a1c62c00dd9e8c7367cd2af0ef9d573d6d6ce5ea12f70d9320a516"
+        },
+        {
+          "directory": "nature-response",
+          "name": "nature-response",
+          "description": "Draft, audit, or revise responses to peer review, revision cover letters, and marked-manuscript or LaTeX revision packages. Use for 审稿意见回复、逐点回复、返修信、 rebuttals and edits to existing response drafts. Initial-submission materials belong to nature-writing; simulated peer review belongs to nature-reviewer.",
+          "sha256": "a8283db56e73879413311cbcde1db4c72dd4390bbe21ab2f62f1f968610b5de1"
+        },
+        {
+          "directory": "nature-reviewer",
+          "name": "nature-reviewer",
+          "description": "Provide evidence-grounded mock peer review of scientific manuscripts or excerpts, covering significance, validity, and major/minor concerns. Use for 模拟审稿、投稿前自审、审稿人视角评估; not author rebuttal drafting.",
+          "sha256": "8ca28cc8e8bda2b5254056940d2a696dc0d3cabcd5573cdec98ffc3cbd162610"
+        },
+        {
+          "directory": "nature-shared",
+          "name": "nature-shared",
+          "description": "Internal shared-reference support package for installed Nature Skills, including nature-writing, nature-polishing, nature-response, nature-reader, and nature-paper2ppt. Do not invoke it as a standalone user workflow. Load only the specific core or journal-format file requested by another Nature skill.",
+          "sha256": "3d914e73f023cab4f247d82f906a948307de8a867fd6c33df999badf67c5d5f2"
+        },
+        {
+          "directory": "nature-statistics",
+          "name": "nature-statistics",
+          "description": "Audit or improve manuscript statistical reporting, including experimental units, replication, uncertainty, tests, and figure statistics. Use for 统计审查、统计方法小节、图注统计 and reviewer concerns; compute new analyses only when requested with data.",
+          "sha256": "89d2a101fc45d7adf8ca327a6da4bda4a696d6364d7c36ead4f53413627a9b6f"
+        },
+        {
+          "directory": "nature-writing",
+          "name": "nature-writing",
+          "description": "Draft or restructure scientific manuscript arguments, sections, and initial-submission materials from author-provided evidence. Use for 论文写作、章节起草、论证重构、正文压缩、首次投稿材料. Use nature-polishing for language-only edits to existing prose and nature-response for post-decision correspondence.",
+          "sha256": "ce7c4d20329b96b03b0f0c0bb744411b1b4deaa7a7b69b90757705a83c195b12"
+        }
+      ]
+    },
+    {
+      "repo": "HKUSTDial/Supervisor-Skills",
+      "commit": "207bc6f7a1aa107e544099c2c7cc86816fba9628",
+      "mode": "normal",
+      "skills": [
+        {
+          "directory": "benchmark-paper-template",
+          "name": "benchmark-paper-template",
+          "description": "Structures Benchmark and Evaluation papers using the five-pillar framework (Research Gap, Construction Pipeline, Evaluation Framework, Empirical Findings, optional Companion Method). Returns a completeness audit, a six-part Introduction logic chain, a Section 2-7 skeleton, and a pre-submission checklist. Use when writing a benchmark paper, structuring a benchmark paper, checking whether a benchmark idea is substantive, drafting a benchmark Introduction, or planning the data-construction pipeline or experiments.",
+          "sha256": "daa63e695d0dccd317517b90b92d0f7e3f1f67f104ee5971ad6e9b5c120d3095"
+        },
+        {
+          "directory": "deep-research",
+          "name": "deep-research",
+          "description": "Runs a deep, survey-grade literature investigation on a research topic: freezes research questions, searches from multiple adversarial perspectives, verifies every citation, synthesizes evidence into a MECE taxonomy with in-sentence cross-comparison, and answers the research questions in an evidence-first report. Use when the user asks for a literature review, a survey of a field, research landscape mapping, or a deep dive into what is known about a topic.",
+          "sha256": "68078fb2307ec659930ad9d9b2e2cb0932a0ff0a4939875ca6f27bec59004c91"
+        },
+        {
+          "directory": "drawio-reconstruction",
+          "name": "drawio-reconstruction",
+          "description": "Reconstructs reference images into high-fidelity, editable Draw.io files with rendered previews: native Draw.io elements carry text and structure, SVG covers simple icons that match the reference, and cropped or transparent PNGs preserve complex visuals. Use when the user wants a diagram image, research figure, architecture diagram, slide, UI screenshot, or image folder turned into `.drawio` XML; batch requests use a manifest with bounded parallelism when available and a full-fidelity serial fallback otherwise.",
+          "sha256": "ccc4e5fa5ccd4d7f8a33f88c241d8df2e951f015d2dadfbaa5506d323ea38441"
+        },
+        {
+          "directory": "figure-designer",
+          "name": "figure-designer",
+          "description": "Advises on the design of the three core figures in a technical paper: the Motivated Example (Figure 1), the Solution Overview (Methodology), and the Experimental Results figures. Recommends the right design paradigm, layout, labelling, and tool for each figure type, then runs a quality-control audit. Use when the user asks to 'design a figure', 'draw Figure 1', 'plot experiment results', 'choose the right chart type', 'which figure tool to use', or 'figure looks unprofessional'.",
+          "sha256": "c9ba67c1c21972ac6e48f22397e45b9e0855f0feb407c3599308de2902880b57"
+        },
+        {
+          "directory": "idea-evaluator",
+          "name": "idea-evaluator",
+          "description": "Evaluates a preliminary research idea against a five-dimension framework (Higher, Faster, Stronger, Cheaper, Broader) plus idea-lifecycle and student-capability matching, paradigm-shift probing, and a fatal-flaws audit. Returns a reviewer-style verdict; non-STEM ideas route to substitute frameworks. Use when the user has a draft research idea and asks whether it is worth pursuing, asks to 'evaluate this idea', 'score this idea', 'assess feasibility', 'novelty check', 'is this a good research direction', or before committing to a paper scope.",
+          "sha256": "630ce9528f472637830b216bf6de231e6dfdcdae4d3b16976324da5ce2d145fb"
+        },
+        {
+          "directory": "intro-drafter",
+          "name": "intro-drafter",
+          "description": "Drafts the Introduction prose for a technical paper, guided internally by a six-paragraph flowchart: background and running example, existing limitations, problem essence and goal, key challenges, solution overview, contributions. Positions the paper as Technique or New Problem/Setting, aligns contributions with challenges, and weaves verified citations. Outputs flowing prose by default, or an outline on request. Use when the user asks to draft, outline, or restructure an Introduction.",
+          "sha256": "675e8a97a58a841b04dd9fa061fcc03075e75695aada5c7b23d1c1498435d5a7"
+        },
+        {
+          "directory": "paper-polish",
+          "name": "paper-polish",
+          "description": "Polishes existing academic prose while preserving the author's meaning: grammar and flow repair, tone calibration against evidence strength, AI-tone removal, and Chinese-to-English rewriting at submission quality. Never fabricates data, citations, or claims, and flags any edit that could change scientific meaning. Use when the user asks to polish a draft, fix awkward wording, remove AI flavor, translate a Chinese manuscript into publishable English, or tone down overclaiming.",
+          "sha256": "fde7964acfea805a399d52da0355dac3139b51be9b2aa456348538c4713f75ce"
+        },
+        {
+          "directory": "paper-writer",
+          "name": "paper-writer",
+          "description": "Drafts publishable paper prose from the author's own materials, from a single paragraph to a full manuscript, across STEM and non-STEM fields. Every factual claim traces to user input, verified retrieval, or field common knowledge; citations pass an independent verification ladder; delivery is clean prose with zero placeholder tags. Use when the user asks to write a section, turn an idea or results into paper text, or draft a full paper.",
+          "sha256": "5ac3df38ca0f6a4a2b7600be100a8b1eb65bec7ce96e492682b765c10e158630"
+        },
+        {
+          "directory": "pre-submission-reviewer",
+          "name": "pre-submission-reviewer",
+          "description": "Runs a pre-submission review of a technical paper across five dimensions: macro logic, writing details, English grammar, LaTeX formatting, and figure quality. Uses a reviewer-style severity taxonomy (CRITICAL / MAJOR / MINOR) and flags banned AI-tone vocabulary and em-dash misuse. Use when the user asks to 'review this paper', 'audit before submission', 'check the draft', 'find issues', 'proofread', or within one week of a submission deadline.",
+          "sha256": "639a96684ad6ca50fb1141287c4d3f2af76653b95cb2dae3dd7897d212bd8c35"
+        },
+        {
+          "directory": "rebuttal-guidance",
+          "name": "rebuttal-guidance",
+          "description": "Provides actionable peer-review rebuttal guidance (not full rebuttal prose) using conditional persuasion P(Z|X,Y): match reviewer mindset X, recommend strategy Y, optionally ground in manuscript evidence and similar successful historical (review, rebuttal) pairs. Use when the user pastes reviewer comments, asks for rebuttal help, rebuttal guidance, response to reviewers, how to reply to R1.W2, OpenReview rebuttal, or the reviewer ignored the rebuttal.",
+          "sha256": "cdccf6a9f0de1a459cfbc22943dcd351a913140ce459b2477ea0e7c567070a2a"
+        },
+        {
+          "directory": "tech-paper-template",
+          "name": "tech-paper-template",
+          "description": "Structures a technical paper's full logical skeleton using a thinking-template table (research background, limitations, key idea or goal, challenges, methodology modules, contributions), positions the paper as Technique or New Problem/Setting, and runs a four-point self-consistency check. Use when the user is brainstorming a paper, discussing progress with an advisor, or planning the paper before drafting. Also use for 'paper skeleton', 'paper logic chain', 'thinking template', 'paper-structure planning'.",
+          "sha256": "93625f319514cba10cb989cd670af6ee623b079f063ace8d1451af56c7c0c879"
+        },
+        {
+          "directory": "vibe-research-workflow",
+          "name": "vibe-research-workflow",
+          "description": "Guides AI-assisted research across three sub-flows, Vibe Coding, Vibe Figure, and Vibe Writing, with behavioural rules that keep the user in charge of academic judgment while delegating mechanical work to AI. Recommends the right tool (Cursor, Claude Code, Codex, Figma, Gemini) for the current stage. Use when the user asks 'how to use AI for research', 'Vibe Coding tips', 'AI-assisted writing workflow', 'which AI tool for this', or starts an AI-assisted work session.",
+          "sha256": "c26a9f011cb8e88d6d5000c1b1844db7278334c07e84be4bae7ea8d08084a333"
+        }
+      ]
+    },
+    {
+      "repo": "K-Dense-AI/scientific-agent-skills",
+      "commit": "92ace75ac21efe19a620434e0ca4e356081fe807",
+      "mode": "normal",
+      "skills": [
+        {
+          "directory": "13c-metabolic-flux",
+          "name": "13c-metabolic-flux",
+          "description": "Estimates intracellular metabolic fluxes from steady-state carbon-13 isotope-tracing measurements using validated atom maps, mfapy isotope simulation, constrained multistart fitting, and flux-profile diagnostics. Use for 13C-MFA, carbon tracing, mass isotopomer distributions (MDVs/MIDs), positional isotopomers, parallel tracer experiments, and determining whether labeling data constrain a pathway flux. Distinguishes measured-label inference from COBRA flux balance analysis and flags experiments requiring nonstationary MFA.",
+          "sha256": "8318b1c785cc80bf095b8667a96061cd5f4b0b9c4e5fa77fd7f57fd8403f2c0f"
+        },
+        {
+          "directory": "adaptyv",
+          "name": "adaptyv",
+          "description": "Uses the Adaptyv Bio Foundry API and Python SDK to design protein characterization experiments, estimate costs, submit sequences, monitor laboratory progress, and retrieve results. Applies to Adaptyv Foundry, its target catalog, binding screening and affinity assays, thermostability, expression, fluorescence, epitope binning, and enzyme activity workflows, including code using adaptyv or FoundryClient.",
+          "sha256": "5de115067c118609dc096f9d582c687fdf331150e3f21c54eedb2ade24d12846"
+        },
+        {
+          "directory": "aeon",
+          "name": "aeon",
+          "description": "This skill should be used for time series machine learning tasks including classification, regression, clustering, forecasting, anomaly detection, segmentation, and similarity search. Use when working with temporal data, sequential patterns, or time-indexed observations requiring specialized algorithms beyond standard ML approaches. Particularly suited for univariate and multivariate time series analysis with scikit-learn compatible APIs.",
+          "sha256": "e1d25cbe0ba5f849299e9e02bd339773bb41529dcece5a6ee68bb080855b97a6"
+        },
+        {
+          "directory": "alphagenome",
+          "name": "alphagenome",
+          "description": "Looks up precomputed AlphaGenome Atlas effects for any GRCh38 single-nucleotide variant (AVI score with Phred and 18 SHAP feature attributions, plus raw and quantile scores for RNA-seq, DNase, ATAC, ChIP-TF, ChIP-histone, CAGE, PRO-cap, splicing, polyadenylation and contact-map tracks), scores variants or scans windows on demand with the AlphaGenome model for human and mouse (variant scoring, in silico mutagenesis, REF-versus-ALT track prediction), and builds Atlas website deep links. Use when the user mentions AlphaGenome, AlphaGenome Atlas, AVI or AlphaGenome Variant Impact, DeepMind variant effect prediction, or wants to prioritise or mechanistically interpret non-coding, regulatory, splicing, enhancer, promoter, or chromatin-accessibility effects of SNVs from a VCF, credible set, or region. Research use only; not a clinical tool.",
+          "sha256": "b133d2a9ff99652b439e0a6f00f93bad49f388be207f7e0241837e001a964947"
+        },
+        {
+          "directory": "analytical-method-validation",
+          "name": "analytical-method-validation",
+          "description": "Plans, executes, and documents validation, verification, and transfer of analytical procedures under the governing framework - ICH Q2(R2) and Q14, USP <1220>/<1225>/<1226>, ICH M10 bioanalytical, CLSI EP, or ISO/IEC 17025. Use for HPLC, LC-MS/MS, GC, CE, ICP-MS, dissolution, qNMR, qPCR, NIR, and ligand binding or cell-based assays whenever the question is whether a procedure is fit for its intended purpose. Triggers include \"method validation\", \"analytical method validation\", \"AMV\", \"validation protocol\", \"acceptance criteria\", \"linearity\", \"reportable range\", \"accuracy and precision\", \"repeatability\", \"intermediate precision\", \"recovery\", \"LOD\", \"LOQ\", \"detection limit\", \"quantitation limit\", \"specificity\", \"robustness\", \"method transfer\", \"method comparison\", \"Deming\", \"Passing-Bablok\", \"Bland-Altman\", \"equivalence testing\", \"OOS investigation\", \"ICH Q2\", \"Q2(R2)\", \"Q14\", \"USP 1225\", \"ICH M10\", \"incurred sample reanalysis\", \"ISR\", \"CLSI EP\", and any request to show that an assay works.",
+          "sha256": "7c2cd278bd397f0f85f4fc790b236a61190cff8799c8ece8da923342f4dc0032"
+        },
+        {
+          "directory": "anndata",
+          "name": "anndata",
+          "description": "Handles annotated matrices in single-cell analysis, .h5ad and Zarr files, and integration with the scverse ecosystem. This is the data format skill—for analysis workflows use scanpy; for probabilistic models use scvi-tools; for population-scale queries use cellxgene-census.",
+          "sha256": "a619c4088e1be6f6feaa5838c63ff8c4381fa21b4adee2a9276aa61464f3a034"
+        },
+        {
+          "directory": "arbor",
+          "name": "arbor",
+          "description": "Applies Arbor Hypothesis Tree Refinement to research artifacts with repeatable evaluators, including model training, agent harnesses, data synthesis and benchmark optimization. Uses persistent hypotheses, isolated experiments, evidence propagation and held-out candidate comparison for multi-experiment research runs. Includes a standard-library state manager and guidance for the RUC-NLPIR Arbor CLI.",
+          "sha256": "aae219831d92984eb6584831f77509cb8650a3986e8c42474aaa4d118ce080a6"
+        },
+        {
+          "directory": "arboreto",
+          "name": "arboreto",
+          "description": "Infers candidate gene regulatory networks from bulk or single-cell expression data using AertsLab Arboreto GRNBoost2 and GENIE3. Use for transcription factor-target association ranking, compatible Dask execution, sparse expression inputs, and network stability checks.",
+          "sha256": "38ff6f24b8fd4a86e2a57ae7bb7669fe4ce401f7375efcc82a6c004f4c51d344"
+        },
+        {
+          "directory": "astropy",
+          "name": "astropy",
+          "description": "Core Python library for astronomy and astrophysics workflows that need Astropy APIs, including units/quantities, coordinates, FITS I/O, tables, time systems, WCS, and cosmology. Use when implementing or debugging astronomical data analysis code with Astropy.",
+          "sha256": "2f9d43ae65766a9715112e3b56cb83fb9c12e4e8b6356c0c4c22131c6cfa536f"
+        },
+        {
+          "directory": "autoskill",
+          "name": "autoskill",
+          "description": "Analyzes user-requested Screenpipe history windows to detect repeated research workflows, match existing scientific skills, and stage new skill drafts or composition recipes for review. Requires a reachable Screenpipe HTTP API, normally on localhost:3030. Detection and embedding inference run locally; the selected LLM receives redacted app/title cluster summaries and matched skill descriptions. Use only when the user explicitly asks to analyze their recent work and propose skills.",
+          "sha256": "d7fc7db094649f5cd1ee6349110d78197166011e929aecd2d468e251b0542ecc"
+        },
+        {
+          "directory": "benchling-integration",
+          "name": "benchling-integration",
+          "description": "Benchling Python SDK and REST API integration for registry entities, inventory, ELN entries, workflows, Benchling Apps, and Data Warehouse queries. Use when automating lab data with benchling-sdk or the v2 API.",
+          "sha256": "115b5418f7c42748918eed922b78010c795920b276063b8b759802eb0172d5de"
+        },
+        {
+          "directory": "bgpt-paper-search",
+          "name": "bgpt-paper-search",
+          "description": "Searches BGPT scientific papers by topic or DOI and retrieves claim-level evidence extracted from full text, including experiments, reported statistics, scope, limitations, and provenance. Use for literature reviews, evidence synthesis, and finding experimental details beyond abstracts.",
+          "sha256": "3b7db6956c13ccf24df151f0905ae579ed58230708a4ba19e6d6fb3bf9d4d6b7"
+        },
+        {
+          "directory": "bids",
+          "name": "bids",
+          "description": "Organizes, queries, validates, and converts Brain Imaging Data Structure (BIDS) datasets. Supports organizing neuroscience and biomedical data (MRI, EEG, MEG, iEEG, PET, microscopy, NIRS, motion capture, EMG, MR spectroscopy, behavioral), querying BIDS layouts, validating compliance, converting DICOM to BIDS, writing metadata sidecars, or creating BIDS derivatives.\n",
+          "sha256": "e1ae63105ccc2e4da7c40e8a2f40d031dd8f2a77270be626df780f0c39eb0b1b"
+        },
+        {
+          "directory": "biopython",
+          "name": "biopython",
+          "description": "Provides Biopython workflows for sequence manipulation, file parsing (FASTA/GenBank/PDB), phylogenetics, and programmatic NCBI/PubMed access (Bio.Entrez). Supports batch processing, custom molecular-biology pipelines, BLAST automation, structure analysis, and motif analysis.",
+          "sha256": "b617561b38a2e3ecc8f8cf3dd8bb0307ac1aaf4d67e6e0432b0c248bc4382245"
+        },
+        {
+          "directory": "bioservices",
+          "name": "bioservices",
+          "description": "Provides a Python interface to bioinformatics services including UniProt, KEGG, ChEMBL, Reactome, QuickGO, and UniChem. Used for cross-database protein annotation, pathway retrieval, chemical identifier mapping, and integrated biological data workflows with BioServices.",
+          "sha256": "9edc884f0fe216d510417d565ae74cc61608824b52eeb53ed0cdea3dcda5bda3"
+        },
+        {
+          "directory": "bulk-rnaseq",
+          "name": "bulk-rnaseq",
+          "description": "Prepares bulk RNA-seq FASTQ, Salmon, STAR or featureCounts output for gene-level differential expression. Covers nf-core/rnaseq and standalone quantification, biological replication, strandedness, reference provenance, validated count assembly and a PyDESeq2 handoff. Use for FASTQ-to-counts analysis, nf-core/rnaseq configuration, STAR/Salmon quantification, or building a counts matrix for DESeq2. For single-cell data use scanpy; for statistical fitting alone use pydeseq2.",
+          "sha256": "e945e970268505368e20d9ddc0c135de469e86626d67565ae9047fb05f70cdbf"
+        },
+        {
+          "directory": "cantera",
+          "name": "cantera",
+          "description": "Runs Cantera homogeneous chemical reactors and evaluates ignition delay with mechanism provenance, conservation checks, and numerical refinement. Use for combustion kinetics, closed adiabatic ideal-gas constant-volume or constant-pressure ignition, temperature histories, or mechanism-specific ignition-delay comparisons.",
+          "sha256": "1dcb22bba51475a69dc93bbefa7d2581f3dfdb6a03a6fc55f8637e398f733a51"
+        },
+        {
+          "directory": "cellprofiler",
+          "name": "cellprofiler",
+          "description": "Runs reproducible CellProfiler microscopy pipelines for nuclear segmentation, cell counts, and per-object fluorescence measurements. Supports image/channel manifests, headless batch execution, segmentation overlays, and measurement QC for 2D fluorescence assays.",
+          "sha256": "b822ed64acb189d900f59ba69418e5e41261d539fd2fd847e402cded2fc1bb38"
+        },
+        {
+          "directory": "cellxgene-census",
+          "name": "cellxgene-census",
+          "description": "Queries the CZ CELLxGENE Census programmatically for versioned public single-cell and spatial transcriptomics data. Use when you need population-scale cell metadata, gene expression slices, Census summary counts, source H5AD URIs/downloads, embeddings, spatial Census data, or reference atlas comparisons across organisms, tissues, diseases, assays, and cell types. For analyzing your own local single-cell data use scanpy, anndata, or scvi-tools.",
+          "sha256": "123b66d6701c7c0587d0a615a2394caee52e62745b3fd31176381ea64aaa794a"
+        },
+        {
+          "directory": "cirq",
+          "name": "cirq",
+          "description": "Google quantum computing framework. Use when targeting Google Quantum AI hardware, designing noise-aware circuits, or running quantum characterization experiments. Best for Google hardware, noise modeling, and low-level circuit design. For IBM hardware use qiskit; for quantum ML with autodiff use pennylane; for physics simulations use qutip.",
+          "sha256": "6ab4c57fd133d21013ac0a8cfdbb2235dcc461d6fc82445693ea475c3d5d6bc1"
+        },
+        {
+          "directory": "citation-management",
+          "name": "citation-management",
+          "description": "Comprehensive citation management for academic research. Search OpenAlex, PubMed, and Google Scholar for papers, extract accurate metadata, validate citations, and generate properly formatted BibTeX entries. This skill should be used when you need to find papers, verify citation information, convert DOIs to BibTeX, or ensure reference accuracy in scientific writing.",
+          "sha256": "dc79fe1e8438dcf598040615d5323360c6a7ed0b868fc3ffc82512c871a1e3ff"
+        },
+        {
+          "directory": "clinical-decision-support",
+          "name": "clinical-decision-support",
+          "description": "Prepares and validates research-only clinical decision-support evaluation, evidence-profile, cohort, survival, biomarker/model, privacy, and governance artifacts. Supports aggregate or synthetic research documentation and traceability, excluding patient care and live clinical operation.",
+          "sha256": "05645e4bc5c73a613ddaeba5bea616739cc0cd71c789c869d97cdfcd8994e072"
+        },
+        {
+          "directory": "clinical-reports",
+          "name": "clinical-reports",
+          "description": "Creates safety-bounded draft structures and runs local deterministic checks for clinical case, diagnostic, trial, safety, and aggregate research reports. Use only with synthetic, de-identified, or aggregate inputs and verified source-fact manifests; every output requires qualified review.",
+          "sha256": "0d7c821b7857a4a761805e1a8263920a37f181658f77f1397755df0e14125022"
+        },
+        {
+          "directory": "cobrapy",
+          "name": "cobrapy",
+          "description": "Performs constraint-based metabolic modeling with COBRApy, including FBA, pFBA, FVA, gene knockouts, flux sampling, growth media, production envelopes, gap filling, and SBML model validation for systems biology and metabolic engineering.",
+          "sha256": "b11365507e183d8e153dd415df3a85a00f34b068bcf8edbad28c0580253564db"
+        },
+        {
+          "directory": "consciousness-council",
+          "name": "consciousness-council",
+          "description": "Structures a multi-perspective council exercise for decisions, research trade-offs, and creative challenges. Simulates thinking archetypes, separates evidence from assumptions and values, and synthesizes a conditional recommendation. Use when the user requests a council, panel, devil's advocate analysis, \"mind council\", or deliberate comparison of perspectives on a difficult choice.",
+          "sha256": "84b5eb07e5459cc110d7d6f63be48a7a01d374ec618da8e293a88b1d037c0c8c"
+        },
+        {
+          "directory": "dask",
+          "name": "dask",
+          "description": "Scales pandas, NumPy, and custom Python research workflows beyond memory or across clusters with Dask. Covers DataFrames, Arrays, Bags, Futures, chunking, schedulers, and distributed diagnostics. Use for partitioned file processing, scientific array computation, or parallel tasks whose memory and dependency structure require Dask.",
+          "sha256": "3b563a98f4cb42858bb1cc49832a3fa1ff9483d929af57ebe629473538e5a041"
+        },
+        {
+          "directory": "database-lookup",
+          "name": "database-lookup",
+          "description": "Queries documented public database APIs with explicit endpoints, filters, pagination, and provenance. Used when a scientific, regulatory, financial, or other database-backed fact must be retrieved reproducibly from a named source rather than inferred from general knowledge.",
+          "sha256": "ead247f623212ca1560486d863a2d0a8c0555d8d20b975d55053eeb4ed043d37"
+        },
+        {
+          "directory": "datalad",
+          "name": "datalad",
+          "description": "Retrieves, versions, and publishes scientific datasets with DataLad and git-annex, and captures computational provenance with datalad run, rerun, and containers-run. Use when cloning or fetching data from OpenNeuro, DANDI, datasets.datalad.org, or any DataLad dataset; when a file in a dataset reads as a broken symlink or a small pointer instead of real data; when an analysis needs a machine-readable record of how each output was produced so it can be re-executed; or when publishing a dataset to siblings such as a GitHub repository plus a storage remote. Also use to decide between DataLad and plain Git for a data-carrying repository.",
+          "sha256": "bb902427db0c501db4187aafd3433eea67fa1071348cf07adcea2558ed49debb"
+        },
+        {
+          "directory": "datamol",
+          "name": "datamol",
+          "description": "Pythonic wrapper around RDKit with simplified interface and sensible defaults. Preferred for standard drug discovery including SMILES parsing, standardization, descriptors, fingerprints, clustering, 3D conformers, parallel processing. Returns native rdkit.Chem.Mol objects. For advanced control or custom parameters, use rdkit directly.",
+          "sha256": "3a0d725456f37c650595a1bdf0cd104936acc5e2bf4146be6829d3fcd4ea6c59"
+        },
+        {
+          "directory": "deepchem",
+          "name": "deepchem",
+          "description": "Builds molecular property prediction and MoleculeNet workflows with DeepChem, including SMILES featurization, scaffold or grouped holdouts, masked labels, graph models and explicit pretrained encoder transfer. Used for ADMET, toxicity, solubility and chemistry ML when DeepChem data/model contracts and scientific validation are needed.",
+          "sha256": "2965735ee473cf70d63c6170f1c8867bd533539809d4535c162acacc07d0b17d"
+        },
+        {
+          "directory": "deepspot-m",
+          "name": "deepspot-m",
+          "description": "Generates transcriptome-wide virtual spatial transcriptomics from H&E histology with DeepSpot-M. Used for predicted log1p-CPM expression from 224x224 tiles at about 20x, querying the released protein-coding gene panel by symbol, and whole-slide prediction after resolution-aware tiling with histolab.",
+          "sha256": "a917434c523e136ddc1ce45b54acbef8c28398dd293314f72faa278431e67418"
+        },
+        {
+          "directory": "deeptools",
+          "name": "deeptools",
+          "description": "NGS analysis toolkit. BAM to bigWig conversion, QC (correlation, PCA, fingerprints), heatmaps/profiles (TSS, peaks), for ChIP-seq, RNA-seq, ATAC-seq visualization.",
+          "sha256": "f09f32bad2d0c54f4a422cb7bcca7703466e653544b2b6e77a7492e6f29ccf8b"
+        },
+        {
+          "directory": "depmap",
+          "name": "depmap",
+          "description": "Retrieves and analyzes Cancer Dependency Map (DepMap) release data, including CRISPR Chronos gene effects, cancer model annotations, omics biomarkers, and PRISM drug sensitivity. Supports cancer-selective dependency, co-essentiality, and candidate synthetic-lethality analyses with release-aware identifiers and statistical checks.",
+          "sha256": "893eb02a2dc8a77e61260dfb74b2acdf6c85e08f33028329d73657a23d398586"
+        },
+        {
+          "directory": "dhdna-profiler",
+          "name": "dhdna-profiler",
+          "description": "Applies the DHDNA framework as an exploratory rubric for reasoning and writing patterns in supplied text. Used for explicit requests for DHDNA, cognitive-style reflection, a thinking-pattern profile, or comparisons of textual reasoning. Scores describe evidence in the sample, not validated psychological traits or personal identity.",
+          "sha256": "55cbc0e142ec3e6e6427c601391aeb38b8de6a83897082f46154f5c8273ccf50"
+        },
+        {
+          "directory": "diffdock",
+          "name": "diffdock",
+          "description": "Predicts protein-small-molecule binding poses with DiffDock and DiffDock-L from PDB or sequence plus SMILES/SDF/MOL2. Covers batch docking, pose triage, confidence interpretation, and validation. Use for molecular docking and virtual-screening pose generation, not binding-affinity prediction.",
+          "sha256": "5fafc5d9f53fa35a47c498f1cf3bad20fbee7404f248226e76e62bb327749912"
+        },
+        {
+          "directory": "dnanexus-integration",
+          "name": "dnanexus-integration",
+          "description": "Builds and operates reproducible genomics workloads on DNAnexus with the dx CLI, dxpy, apps/applets, native workflows, dxCompiler, and Nextflow. Supports DNAnexus data transfers, dxapp.json development, execution monitoring, workflow import, and project automation.",
+          "sha256": "e8fcca26f5558e04256a2253c002cc8c8c024c06614fbd7d6e0161e53c5aa519"
+        },
+        {
+          "directory": "esm",
+          "name": "esm",
+          "description": "Uses the Biohub esm Python SDK for ESM3 protein generation, ESMC embeddings, and ESMFold2 all-atom folding. Applies to local model inference and Biohub hosted clients, including former Forge workflows; distinguishes the separate legacy fair-esm distribution.",
+          "sha256": "49da3c6f5c81359d48b7c0b4416a212e7106f777b4c7174b2b42ce0c02bd95f6"
+        },
+        {
+          "directory": "etetoolkit",
+          "name": "etetoolkit",
+          "description": "Analyzes, manipulates, compares, annotates, and visualizes phylogenetic or other hierarchical trees with ETE 4. Supports Newick/Nexus tree I/O, topology edits and pattern matching, Robinson-Foulds comparisons, gene-tree evolutionary events and reconciliation, NCBI/GTDB taxonomy, SmartView exploration, and publication rendering. Applies to existing trees after alignment and phylogenetic inference, rather than inferring trees from raw sequences.",
+          "sha256": "da2e57c0e3677a4219d0629a2c1392470f20bc3ade2809c1f0334fd84441da08"
+        },
+        {
+          "directory": "exa-search",
+          "name": "exa-search",
+          "description": "Searches scientific and technical web content with Exa and extracts page or PDF text from URLs in batches. Supports scholarly discovery with the publication category and academic domain filters. Applies to requests to search the web, look up current research, fetch a page, or extract an article using Exa.",
+          "sha256": "8cdedf5648783a209593ff91024f43bd8d8e066b03f0a72a6cf36d90e1650204"
+        },
+        {
+          "directory": "experimental-design",
+          "name": "experimental-design",
+          "description": "Designs experiments and studies BEFORE data is collected — choosing a design, randomizing, blocking, and laying out treatment combinations so results are interpretable. Use whenever someone is planning a study, asks how to assign subjects/samples to groups, mentions randomization, blocking, stratification, controls, factorial or fractional-factorial designs, design of experiments (DOE), screening many factors, response-surface optimization, crossover or repeated-measures or split-plot designs, cluster/group randomization, Latin squares, plate layouts, batch/run-order effects, replication vs. pseudoreplication, or sequential/adaptive/group-sequential designs. Trigger even for informal phrasings like \"how should I set up this experiment\", \"how do I avoid confounding\", \"what's the best way to test these 6 factors\", or \"assign these mice to conditions\". For computing the sample size or power once the design is chosen, use statistical-power; for analyzing data already collected, use statistical-analysis.",
+          "sha256": "db2de0f3d29b7729776a91e923c9c83801298f5ad8e88fe44570045fbefcc248"
+        },
+        {
+          "directory": "exploratory-data-analysis",
+          "name": "exploratory-data-analysis",
+          "description": "Performs bounded, local exploratory analysis of explicitly supported scientific files. Supports redacted CSV/TSV/JSON profiles; optional NumPy, HDF5, FASTA/FASTQ, and basic image metadata inspection; missingness/leakage audits; outlier and transformation sensitivity; and rigorous EDA report scaffolds. Other domain formats are reference-only and unknown formats fail closed.",
+          "sha256": "955c4cefa49106dd03b55cbd62603bab2d2fb678e627dd452ba62040c7128484"
+        },
+        {
+          "directory": "fictiv",
+          "name": "fictiv",
+          "description": "Operates Fictiv (app.fictiv.com), the on-demand manufacturing platform, end to end in the user's browser. Covers uploading CAD parts, configuring process, material, finish, threads, tolerances and inspections, getting instant or manual quotes, reading and fixing DFM feedback, choosing lead time and region, checking out and paying (card or PO), tracking orders, reordering, and troubleshooting. Applies when the user mentions Fictiv, wants a part CNC machined, 3D printed, sheet-metal fabricated, urethane cast, injection or compression molded, or die cast through an online service, asks to \"get a quote\" or \"order parts\" for a STEP/SLDPRT/STL file, wants to check a Fictiv quote or order status, or has a problem with a Fictiv upload, DFM warning, price or checkout. Also applies when the user wants custom parts manufactured and has a Fictiv account, even if Fictiv is not named.",
+          "sha256": "c4f9b182d2f4664fe4b729832fff7fe98112b6823eaea3601633fa17112a6164"
+        },
+        {
+          "directory": "flowio",
+          "name": "flowio",
+          "description": "Reads, inspects, and writes Flow Cytometry Standard (FCS) 2.0, 3.0, and 3.1 files with FlowIO. Use for low-level FCS metadata and channel inspection, NumPy event extraction, multi-dataset files, table export, and FCS 3.1 creation; use FlowKit for compensation, cytometry transforms, gating, or FlowJo workspaces.",
+          "sha256": "24247696d4e9455f4b5509b7bee1856c251fa59181d80aa8de22d54ecd685b62"
+        },
+        {
+          "directory": "flowkit",
+          "name": "flowkit",
+          "description": "Analyzes flow cytometry data with FlowKit, including spillover compensation, logicle and biexponential transforms, hierarchical gating, GatingML strategies, and supported FlowJo 10 workspaces. Use for reproducible gate counts, population percentages, gated fluorescence summaries, or reproducing a FlowJo analysis in Python. For FCS metadata inspection or file-format repair alone, use FlowIO.",
+          "sha256": "47c4dcb907dc6ec15daa4bdf1855e9c96860ef1a558507bef0084d79c2d1c57c"
+        },
+        {
+          "directory": "fluidsim",
+          "name": "fluidsim",
+          "description": "Plans, configures, inspects, restarts, and analyzes bounded FluidSim computational-fluid-dynamics simulations with explicit numerical-validity and HPC safety checks. Use for FluidSim solver selection, parameter review, FFT/MPI setup, output diagnostics, or restart compatibility.",
+          "sha256": "7784bbf33615014f5965ff1db3d11bcc42e1bc4bb1f18f26208c62892b66df28"
+        },
+        {
+          "directory": "folklore-variant-evidence",
+          "name": "folklore-variant-evidence",
+          "description": "Retrieves ClinGen gene-disease validity assertions for a public gene or disease, and reviews source-linked public evidence and literature for one supported GRCh38 germline nuclear SNV or simple indel through Folklore Clinical Variant Interpretation MCP. Used when a scientific agent must branch deterministically on resolved, ambiguous, not-found, invalid, unsupported, or unavailable variant outcomes; chain a resolved public variant into related literature or publication details; or preserve evidence provenance without accepting patient, phenotype, family, segregation, or private case data.",
+          "sha256": "134b5ea684815b99c56fadf92a1cb42d37eaca4245515278e404b8876b7acfe0"
+        },
+        {
+          "directory": "generate-image",
+          "name": "generate-image",
+          "description": "Generates or edits images with AI models through the OpenRouter Image API (Gemini, Seedream, Recraft, GPT-Image, Riverflow). Use for photos, illustrations, artwork, concept art, visual assets, logos, and image editing or compositing from reference images. For flowcharts, circuits, pathways, and other technical diagrams, use the scientific-schematics skill instead.",
+          "sha256": "42438be890c5ba875ddee1bbbf505e623433886a2b180f21b2012f72d038f92a"
+        },
+        {
+          "directory": "geniml",
+          "name": "geniml",
+          "description": "Supports audited local Geniml genomic-interval workflows: validate BED and universe contracts, plan Region2Vec or scEmbed runs, inspect model/tokenizer compatibility, and assess consensus universes.",
+          "sha256": "7fb9ad57657b2fda7dbc3f234af5dab47915953c6678fbc066c9086c83eadd21"
+        },
+        {
+          "directory": "genomic-coordinates",
+          "name": "genomic-coordinates",
+          "description": "Converts genomic intervals between coordinate conventions, normalises and compares variant representations, and detects assembly or contig-naming mismatches before they corrupt an analysis. Used whenever coordinates cross a format, tool, or assembly boundary - converting between BED, GFF/GTF, VCF, SAM/BAM, WIG, PSL, genePred, Picard interval_list, or region strings; reconciling 0-based half-open with 1-based inclusive; left-aligning or trimming indels; checking whether two variant records describe the same change; mapping genomic to transcript, CDS, or protein positions; auditing a BED/GTF/VCF for convention violations; or diagnosing GRCh37 vs hg19 vs GRCh38 vs T2T, chr-prefix, and liftover problems. Triggers include \"off by one\", \"0-based\", \"1-based\", \"half-open\", \"coordinate system\", \"left-align\", \"normalize variant\", \"bcftools norm\", \"chr prefix\", \"wrong genome build\", \"liftover\", \"REF mismatch\", and \"HGVS\".",
+          "sha256": "da3eee43dfee06ee632388ddda0c38bb0bc57ec33420cbf26b14ce86be3c28a0"
+        },
+        {
+          "directory": "genomic-intelligence",
+          "name": "genomic-intelligence",
+          "description": "Predicts regulatory features, gene structure, and expression directly from DNA sequence using Genomic Intelligence's hosted transformer DNA language models — no local GPU or model weights. Six tasks over a REST API and a hosted MCP server (keyless public demo): promoter regions, splice donor/acceptor sites, enhancer activity, chromatin state, sequence-to-expression (log TPM), and de-novo gene annotation, plus a composite find-genes-then-predict-expression workflow. Use when the user has a gene symbol, a genomic region, or a DNA/FASTA sequence and wants any of these predictions, mentions Genomic Intelligence, genomicintelligence.ai, api.genomicintelligence.ai, or mcp.genomicintelligence.ai.",
+          "sha256": "cdb027004996d313d31b55f6b93306de45306a89b8a4a792e94c36cf2d1dea20"
+        },
+        {
+          "directory": "geomaster",
+          "name": "geomaster",
+          "description": "Supports geospatial research workflows for remote sensing, vector and raster GIS, spatial statistics, terrain and network analysis, and machine learning for Earth observation. Use when processing satellite imagery, aligning coordinate systems and raster grids, accessing STAC catalogs, analyzing geospatial time series, or implementing scientific GIS workflows in Python, R, Julia, JavaScript, C++, Java, Go, or Rust.",
+          "sha256": "7b3b88f13f0094285372dfcc25a000fb7e74e5fc4b67c1b6999543fff3cadde8"
+        },
+        {
+          "directory": "geopandas",
+          "name": "geopandas",
+          "description": "Guidance and local audit tools for Python workflows that directly use GeoPandas GeoSeries, GeoDataFrame, spatial operations, or vector-data I/O.",
+          "sha256": "c03a46f911535326802af476208a1e04de13ea385f4d5309b022ad931826b222"
+        },
+        {
+          "directory": "get-available-resources",
+          "name": "get-available-resources",
+          "description": "Detects host inventory and effective CPU, memory, disk, scheduler, container, and accelerator limits when a user asks for resource-aware planning or before a clearly resource-sensitive local workload. Produces a redacted JSON snapshot and conservative planning helpers without stress tests or assuming visible host hardware is usable.",
+          "sha256": "54044d598fce28fca2ce50e7895f44423b070493db2f9c96ff0445bee4d3689d"
+        },
+        {
+          "directory": "gget",
+          "name": "gget",
+          "description": "Queries 20+ bioinformatics resources through CLI/Python. Supports quick lookups of gene info, BLAST/BLAT, viral sequence downloads, PDB/mmCIF structures, G2P residue annotations, enrichment analysis, OpenTargets, COSMIC, CELLxGENE, and 8cube mouse specificity/expression data. Best for interactive exploration and simple queries. For batch processing or advanced BLAST use biopython; for multi-database Python workflows use bioservices.",
+          "sha256": "55027a94be8dde013fd17e563ba20ccba92b7131c29c21e9c83e54fbce2b348a"
+        },
+        {
+          "directory": "ginkgo-cloud-lab",
+          "name": "ginkgo-cloud-lab",
+          "description": "Guides protocol selection, input preparation, pricing checks, and browser ordering on Ginkgo Bioworks Cloud Lab (cloud.ginkgo.bio). Applies to cell-free, E. coli, and Pichia protein expression; HiBiT, A280, and LabChip readouts; IVT mRNA/circRNA synthesis; thermal shift assays; Echo-MS methods; SPR target onboarding; plate-reader assay onboarding; and fluorescent pixel art.",
+          "sha256": "b3675d3ad36070fd598642fd2b58c36d3cfd09a08eef3f52d77629856e2e845b"
+        },
+        {
+          "directory": "glycoengineering",
+          "name": "glycoengineering",
+          "description": "Analyzes and engineers protein glycosylation by scanning canonical N-glycosylation sequons, describing S/T-rich regions, checking curated glycan evidence, and preparing NetNGlyc, NetOGlyc and GlycoSHIELD workflows. Use for glycoprotein engineering, antibody Fc glycosylation, glycan shielding, and site-specific glycoproteomics interpretation.",
+          "sha256": "b529bde5367cd84175f07db473361c9713a69af8f641cd740a10c0b660b32bc7"
+        },
+        {
+          "directory": "gtars",
+          "name": "gtars",
+          "description": "Supports Gtars for local genomic interval models and set algebra, overlaps and counts, consensus and coverage, tokenization, fragment processing, and refget/BEDbase planning across Python, Rust, and the CLI.",
+          "sha256": "c3586bcfa1e8d89a2abb23d74496d41e68daec5e7a8af6cefb9080a0ed469161"
+        },
+        {
+          "directory": "histolab",
+          "name": "histolab",
+          "description": "Extracts and preprocesses whole-slide histology image tiles with Histolab. Use for WSI inspection, tissue masks, random/grid/score-based tile extraction, H&E stain normalization, and tile dataset preparation. For multiplexed imaging or deep learning inference pipelines, use pathml.",
+          "sha256": "af0c6c98951d02cab64e904504a8ab97b815a461e99744134da0e7dd57189331"
+        },
+        {
+          "directory": "hugging-science",
+          "name": "hugging-science",
+          "description": "Discovers and evaluates scientific datasets, models, methodology posts, and Spaces through the Hugging Science catalog. Used when selecting scientific ML resources in biology, chemistry, genomics, materials, climate, physics, astronomy, medicine, mathematics, protein design, single-cell analysis, or PDE modeling, and when checking their actual datasets, Transformers, native-runtime, Inference Providers, or Gradio interfaces.",
+          "sha256": "cff6c7e67d7f1925f008e11f5d0428f08391c35f4294d2c4c70350667b2decb2"
+        },
+        {
+          "directory": "hypogenic",
+          "name": "hypogenic",
+          "description": "Plans and audits use of ChicagoHAI HypoGeniC/HypoRefine for LLM-assisted hypothesis generation from labeled text datasets. Use for the `hypogenic` package, its task configs, hypothesis banks, or HypoBench datasets—not for manual hypothesis formulation or scientific validation.",
+          "sha256": "8ad3f55669b7c5e8bbf1c70111259f2782fc26ec39826b011d51799de08b9da5"
+        },
+        {
+          "directory": "hypothesis-generation",
+          "name": "hypothesis-generation",
+          "description": "Formulates evidence-bounded scientific questions, candidate hypotheses, rival explanations, causal or associational claims, discriminating predictions, measurements, and preregistration-ready analysis plans. Used when turning observations or preliminary findings into transparent, testable research plans without treating hypotheses as facts.",
+          "sha256": "5bccec0437d96d61821ec2095e7e32b61e8634cd8c02f11f42da953121e92719"
+        },
+        {
+          "directory": "imaging-data-commons",
+          "name": "imaging-data-commons",
+          "description": "Queries and downloads public cancer imaging data from NCI Imaging Data Commons. Supports IDC collection discovery, DICOM access, radiology (CT, MR, PET) and pathology AI datasets, metadata SQL, visualization, licensing, and citations. Uses public metadata and download routes without authentication; optional BigQuery and Google Healthcare routes require Google credentials.",
+          "sha256": "8dd250a80dc6959fcebc9cbae8049b25a83be31647c597f17a9e674c4f2e3685"
+        },
+        {
+          "directory": "infographics",
+          "name": "infographics",
+          "description": "Creates and reviews infographics with Nano Banana 2 via OpenRouter. Use for statistical summaries, timelines, comparisons, processes, and visual explanations with supplied data or optional Sonar research. Supports ten layouts, eight style presets, reference images, and accessible palette starting points.",
+          "sha256": "dcd4ac5b46ac7f88ce8bd4ddf3efc8aa99a3f4bc6cc9ce2067c7d469758f0a8f"
+        },
+        {
+          "directory": "iso-standards-readiness",
+          "name": "iso-standards-readiness",
+          "description": "Prepares and structurally reviews readiness evidence for ISO management-system and laboratory-competence standards - ISO 13485 medical device QMS, ISO 14971 device risk management, ISO/IEC 17025 testing and calibration laboratories, and ISO 15189 medical laboratories. Use when organizing declared scope, controlled documents, risk-management files, scope of accreditation, traceability, CAPA, external-provider controls, or bounded local evidence manifests, and when separating ISO certification from laboratory accreditation, FDA QMSR inspection, CLIA certification, MDSAP, and EU MDR/IVDR evidence boundaries. Not for legal applicability, compliance, certification, or accreditation decisions; contains no clause text.",
+          "sha256": "0ffd95e86924a698fcd0c806e51f24e2fc500847697d8ff99b255af817e15259"
+        },
+        {
+          "directory": "lab-hardware-cad",
+          "name": "lab-hardware-cad",
+          "description": "Designs custom laboratory hardware as parametric build123d models and exports fabrication artifacts as STEP, STL, and DXF files - microfluidic chips and molds, optomechanical mounts and breadboard adapters, cuvette and microplate holders, tube racks, animal-behavior rigs, and 3D-printed instrument fixtures. Use when a research task needs a physical part that must mate with standardized labware, an optical table, a cage system, or a printer, CNC, or laser process.",
+          "sha256": "d3e9c67c3f08bfd7c6bb6c91d6ccc6621a72d2f47248965b4db4e1e296426b18"
+        },
+        {
+          "directory": "labarchive-integration",
+          "name": "labarchive-integration",
+          "description": "Integrates with the official LabArchives ELN REST-like API and Inventory API v1. Supports regional endpoint selection, signed-request construction, user authorization and UID flows, local LA container validation, and verified LabArchives integration workflows.",
+          "sha256": "dcc452099ec0c4db3bf7aa0417bfeb70b14d249650be316b67f4f495461d1c0a"
+        },
+        {
+          "directory": "lamindb",
+          "name": "lamindb",
+          "description": "Manages biological datasets and models with LaminDB, including artifact registration, lineage tracking, schema validation, Bionty ontology annotation, query/search, collections, branches, storage, and workflow integrations. Use for reproducible biological data curation or a LaminDB lakehouse.",
+          "sha256": "00f1246a7f59b6ec11ca119687ccc3ff384547f40d44f2140f557ac3ddd01b35"
+        },
+        {
+          "directory": "latchbio-integration",
+          "name": "latchbio-integration",
+          "description": "Builds, registers, debugs, and operates bioinformatics workflows on Latch using the Python SDK, CLI, Latch Data and Registry, Nextflow, Snakemake, programmatic execution, and Latch MCP. Use when authoring or deploying Latch workflows, configuring resources or interfaces, moving data, integrating Registry, or launching and monitoring runs.",
+          "sha256": "0f01df45ed4aecb81d672a5576820aee37c32864b4fe84bb4d049471a14d3e5c"
+        },
+        {
+          "directory": "latex-posters",
+          "name": "latex-posters",
+          "description": "Creates research posters in LaTeX using beamerposter, tikzposter, or baposter. Use for conference posters, academic presentations, multi-column scientific layouts, figure integration, typography, compilation, and PDF preflight.",
+          "sha256": "4350dc80280fea210f9682991103445e97c58504ddd14e7a26f3d84e2fee5837"
+        },
+        {
+          "directory": "liteparse",
+          "name": "liteparse",
+          "description": "Local document and PDF parsing that returns spatial text with bounding boxes. Use for extracting text from PDFs, DOCX, Office files, and images; running OCR on scans; producing layout-preserved JSON for RAG; batch-ingesting folders of papers; or rendering pages to PNG for multimodal agents. Distinguishing capabilities are spatial text boxes, Markdown, page raster output, and local parsing with optional custom HTTP OCR.",
+          "sha256": "02a789c7959670cb8898e329588a41d43fa7b270c768a70c22aed05031d042a4"
+        },
+        {
+          "directory": "mageck",
+          "name": "mageck",
+          "description": "Analyzes pooled CRISPR screen FASTQ reads and guide-count matrices with MAGeCK, validates guide libraries and contrasts, measures replicate and library QC, and produces gene hit rankings with effect sizes and FDR. Use for new knockout, CRISPRi, or CRISPRa screen analysis, enrichment or depletion contrasts, and MAGeCK count/test workflows; existing public dependency-score lookup belongs to DepMap.",
+          "sha256": "562d7e2cb2febef14ab722bc29cd33983b523da287fb02b64eadf18702d4a9d1"
+        },
+        {
+          "directory": "marine-carbonate-chemistry",
+          "name": "marine-carbonate-chemistry",
+          "description": "Solves seawater carbonate chemistry with PyCO2SYS for chemical oceanography, ocean acidification, and marine carbon-cycle research. Use for paired total alkalinity, dissolved inorganic carbon, pH, or seawater pCO2/fCO2 measurements; carbonate speciation; aragonite and calcite saturation; Revelle factors; lab-to-in-situ temperature and pressure corrections; and measurement uncertainty propagation. Applies to carbonate-system calculations, not general aqueous speciation or air-sea gas-flux estimation.",
+          "sha256": "03e58c7f9d7df75a323a6a8cf29ec18ae524cc308e5002c27fb5c65e1230f174"
+        },
+        {
+          "directory": "markdown-mermaid-writing",
+          "name": "markdown-mermaid-writing",
+          "description": "Writes scientific Markdown documentation and Mermaid diagrams for workflows, relationships, timelines, and schemas. Provides syntax references, document templates, accessibility guidance, and version-aware rendering checks. Use when a user requests Markdown, Mermaid, or a text-based structural diagram; quantitative scientific figures require suitable plotting tools.",
+          "sha256": "c28a9d602fc5b55e9fa80cff493b045bb70d3cec47e2288e38051744337214c4"
+        },
+        {
+          "directory": "market-research-reports",
+          "name": "market-research-reports",
+          "description": "Builds evidence-traceable market research reports and assumption-driven market sizing or forecast scenarios. Use for market definition, industry and customer evidence, competitive landscapes, TAM/SAM/SOM reconciliation, forecast sensitivity, and auditable report scaffolds.",
+          "sha256": "8fba27d8509bb95caade7ef856d83ddbd7e51303590f5f2db149b0270cf6fd40"
+        },
+        {
+          "directory": "markitdown",
+          "name": "markitdown",
+          "description": "Converts heterogeneous documents and selected URIs to Markdown with Microsoft MarkItDown for text analysis, search, and LLM/RAG ingestion. Covers safe local conversion, streams, Office/PDF/data formats, batch workflows, plugins, vision OCR, Azure extraction, and the official MCP server.",
+          "sha256": "8c165c18ceaddc9367dd74f65fd60e42c1c3de9d180828ae1ff09a001af42339"
+        },
+        {
+          "directory": "matchms",
+          "name": "matchms",
+          "description": "Processes, cleans, compares, and searches tandem mass spectra with matchms. Use for MS/MS file I/O, metadata harmonization, peak filtering, spectral similarity, library matching, score matrices, and molecular-similarity networks. Use pyopenms instead for LC-MS feature detection or proteomics pipelines.",
+          "sha256": "1bde0e20f69f99dfa44800b9e908b0f90aa1256cfdb1d88a36ed0b8064c447ec"
+        },
+        {
+          "directory": "matlab",
+          "name": "matlab",
+          "description": "Builds, reviews, migrates, and plans MATLAB or GNU Octave numerical workflows. Use for arrays, tabular/time data, tests, projects, graphics, MAT files, and explicit Python interoperability.",
+          "sha256": "91afa6ec0f0b3797f51da62b79d44d00a32fcdf3690b9505e5987982a8e6d0e2"
+        },
+        {
+          "directory": "matplotlib",
+          "name": "matplotlib",
+          "description": "Creates and customizes scientific plots with Matplotlib. Used for fine-grained control over plot elements, novel plot types, and scientific workflows. Export to PNG/PDF/SVG for publication. For quick statistical plots use seaborn; for interactive plots use plotly; for publication-ready multi-panel figures with journal styling, use scientific-visualization.",
+          "sha256": "60b80aaa802e1a88db30729611789bf5ee92b3f2a7bb695502bac10dd255ee86"
+        },
+        {
+          "directory": "medchem",
+          "name": "medchem",
+          "description": "Applies medicinal chemistry filters for compound triage, using drug-likeness rules (Lipinski, Veber, CNS), structural alert catalogs (PAINS, NIBR, ChEMBL), complexity metrics, and the medchem query language for library filtering.",
+          "sha256": "07e44d0dc965278ab8e4fe9a325e89198bccd7e3ee26c1c454e788e1f4df9c2f"
+        },
+        {
+          "directory": "modal",
+          "name": "modal",
+          "description": "Modal is a serverless cloud platform for running Python on demand, including on-demand GPUs. Use when deploying or serving AI/ML models, running GPU-accelerated workloads (training, fine-tuning, inference), serving web endpoints, scheduling batch jobs, or scaling Python code to cloud containers with the Modal SDK.",
+          "sha256": "5da5d0a39db4ea5f429ffc40772bbce87e26f778fac363c42873ca6bb84fecd9"
+        },
+        {
+          "directory": "molecular-dynamics",
+          "name": "molecular-dynamics",
+          "description": "Runs and analyzes molecular dynamics simulations with OpenMM and MDAnalysis. Sets up protein/small molecule systems, defines force fields, runs energy minimization and production MD, and analyzes trajectories (RMSD, RMSF, contact maps, free energy surfaces). For structural biology, drug binding, and biophysics.",
+          "sha256": "1efb31165ec1477b37c31394ba04b5fb280d44db8907afdf2a956e48487f1136"
+        },
+        {
+          "directory": "molfeat",
+          "name": "molfeat",
+          "description": "Featurizes small molecules with Molfeat for QSAR/QSPR, chemical similarity, virtual screening, and molecular ML. Covers ECFP/MACCS fingerprints, RDKit descriptors, pharmacophores, pretrained embeddings, configuration persistence, and molecule-to-label alignment.",
+          "sha256": "6bc3c336b58c8c7214042c5679cd793e655c15e703fa5d5ac34e09250d11df5e"
+        },
+        {
+          "directory": "ncats-arax",
+          "name": "ncats-arax",
+          "description": "Queries the NCATS Translator ARAX production API for bounded, typed, provenance-rich one-hop and endpoint-pinned two-hop biomedical knowledge-graph relationships. Use for Biolink-constrained RTX-KG2 lookup, explicit selected-provider ARAX federation, separate entity normalization, qualifier-aware graph traversal, and inspection of TRAPI edge bindings, publications, and knowledge-source provenance. Do not use for inference, ranking, open-ended pathfinding, clinical guidance, or sensitive queries.",
+          "sha256": "f15f9f9a149a942ab1eaed0115879afa399249e261d7118a6d19e3da834ba74c"
+        },
+        {
+          "directory": "networkx",
+          "name": "networkx",
+          "description": "Creates, analyzes, and visualizes complex networks and graphs in Python with NetworkX. Use when working with network/graph data structures, computing graph algorithms (shortest paths, centrality, clustering), detecting communities, generating synthetic networks (random, scale-free, small-world), reading/writing graph file formats, or drawing network topologies. Common applications include social, biological, transportation, and citation networks.",
+          "sha256": "981a213f33ddca21ec327ecee13e8ef8b85b7986274b84a10268ee73310df5be"
+        },
+        {
+          "directory": "neurokit2",
+          "name": "neurokit2",
+          "description": "Builds and audits reproducible NeuroKit2 research workflows for physiological time-series preprocessing, event/interval analysis, multimodal alignment, variability, and complexity. Use when code imports neurokit2 or needs its current APIs, schemas, and method-aware validation—not for diagnosis or device validation.",
+          "sha256": "6f73a726bdea37723aa68bf7aaf896eb10322e875cbf3bc5ee96707643f1be35"
+        },
+        {
+          "directory": "neuropixels-analysis",
+          "name": "neuropixels-analysis",
+          "description": "Analyzes Neuropixels extracellular recordings end-to-end with SpikeInterface. Covers loading SpikeGLX/Open Ephys/NWB data, preprocessing, drift/motion correction, Kilosort4 (and CPU) spike sorting, quality metrics, and unit curation (threshold-based, model-based UnitRefine, and AI-assisted visual review). Use when working with Neuropixels 1.0/2.0 recordings, spike sorting, or extracellular electrophysiology analysis.",
+          "sha256": "65985e85e9ac2206c92291446f543505b2b568bf1d622448e162ae6255e154dc"
+        },
+        {
+          "directory": "nextflow",
+          "name": "nextflow",
+          "description": "Builds, runs, and debugs Nextflow DSL2 pipelines and nf-core workflows. Use for Nextflow, nf-core, .nf files, nextflow.config, processes/channels/operators, samplesheets, nf-test, modules/subworkflows, container and executor configuration, HPC/SLURM or cloud deployment, and failed or resumed pipeline runs.",
+          "sha256": "daa37795b3fe13ebf1c980acafb8401c4d1d7749dae013acc948f76c50c7379c"
+        },
+        {
+          "directory": "nmrglue",
+          "name": "nmrglue",
+          "description": "Processes calibrated one-dimensional complex NMR free-induction decays with nmrglue into phased spectra, peak candidates, and signed integration regions. Use for raw 1D NMR processing, ppm-axis verification, apodization, Fourier transformation, manual phasing, baseline correction, or reproducible spectral integration.",
+          "sha256": "358b5a5d64d20092e8631aeb8f4a06f11634a9fdeb8c594a93e6c1282b04b10b"
+        },
+        {
+          "directory": "nwb-conversion",
+          "name": "nwb-conversion",
+          "description": "Converts neuroscience acquisition data to Neurodata Without Borders files with NeuroConv and PyNWB, preserves metadata and timebases, checks evidence-based clock alignment, and produces schema validation, NWB Inspector findings and round-trip checks. Use for NWB conversion and synchronization of planar single-channel two-photon TIFF imaging plus timestamped behavioral position CSV; this skill does not perform spike sorting or claim tested support for arbitrary acquisition formats.",
+          "sha256": "e2381f17db5e2b20354186a8a3c85b466afcf534cc1ae6181e87654ba5ed5fc6"
+        },
+        {
+          "directory": "omero-integration",
+          "name": "omero-integration",
+          "description": "Inspects and automates microscopy data workflows against OMERO.server with omero-py, BlitzGateway, OMERO CLI, tables, annotations, ROIs, rendering, and documented OMERO.web APIs. Use this skill for scoped OMERO inventory, metadata export, import/export planning, or reviewed write workflows.",
+          "sha256": "c75e73ba447bbf9530f6d3df4ba6224185f3c7728460b37938c8626dab664ad2"
+        },
+        {
+          "directory": "onekgpd",
+          "name": "onekgpd",
+          "description": "Queries the 1000 Genomes Project dataset (3,202 whole-genome-sequenced individuals, GRCh38) at the level of individual participants. Use when a question is about individuals or variants in the 1000 Genomes Project cohort: which individuals carry variants matching specific criteria in a gene or region, which individuals are homozygous-reference at a position, which variants exist in the dataset or carried by specified individuals in a gene or region, the relatedness between two specified individuals. Variants are returned with 1000 Genomes allele frequencies (AF), gnomAD v4.1 exome and genome AF, AlphaMissense score, and HGVSp annotations.\n",
+          "sha256": "6a7c0a90c42e899e818de866e843cf60d5434422fa69b910a7db9a06f25240e9"
+        },
+        {
+          "directory": "ontology-term-resolution",
+          "name": "ontology-term-resolution",
+          "description": "Resolves free-text scientific labels to ontology term IDs and validates existing CURIEs against the EBI Ontology Lookup Service (OLS4). Also looks up prefixes in Bioregistry, resolves compact identifiers via Identifiers.org, maps lab shorthand with ZOOMA, and builds Ontobee term pages. Use whenever an ontology identifier must be produced or checked - annotating tissue, cell type, disease, phenotype, assay, chemical, organism, sex, or developmental stage fields; preparing metadata for GEO, ENA, BioSamples, CELLxGENE, HCA, or ISA-Tab submission; auditing a metadata table of term IDs; checking whether a term is obsolete and what replaced it; or deciding HPO vs HP. Triggers include \"ontology term\", \"ontology ID\", \"CURIE\", \"controlled vocabulary\", \"UBERON\", \"CL:\", \"MONDO\", \"HPO\", \"EFO\", \"ChEBI\", \"NCBITaxon\", \"GO term\", \"PATO\", \"Zooma\", \"Bioregistry\", \"Identifiers.org\", \"Ontobee\", \"annotate this tissue/cell type/disease\", and any request to emit or verify an identifier shaped like PREFIX:0001234.",
+          "sha256": "db310515a230a47023169be207f654458789377c98b30fa593ee420738e4eefb"
+        },
+        {
+          "directory": "open-notebook",
+          "name": "open-notebook",
+          "description": "Organizes research with the self-hosted Open Notebook alternative to NotebookLM. Supports source ingestion (PDFs, web pages, audio, video, and Office documents), cited document chat, text and vector search, notes, custom transformations, and multi-speaker podcasts. Use when automating Open Notebook through its REST API or configuring its local or cloud AI providers, including OpenAI, Anthropic, Google, Ollama, Groq, and Mistral.",
+          "sha256": "39f3bb01946218b53c02e3aedde025e6f8b786307e5ba0c4698c5aed02f9fdd6"
+        },
+        {
+          "directory": "openpiv",
+          "name": "openpiv",
+          "description": "Performs Particle Image Velocimetry (PIV) analysis with OpenPIV. Use when extracting velocity fields from PIV image pairs, analyzing fluid dynamics or flow visualization experiments, cross-correlating interrogation windows, validating and replacing spurious PIV vectors, or computing vorticity, strain rate, and turbulence statistics from measured velocity fields.",
+          "sha256": "dc9aeeb18ef4b4832b9405c342ce40abbb09bc8162e35f2c659dd5814b07369a"
+        },
+        {
+          "directory": "opentrons-integration",
+          "name": "opentrons-integration",
+          "description": "Authors, reviews, migrates, simulates, and troubleshoots official Opentrons Python Protocol API v2 protocols for Flex and OT-2 robots. Use for robot-specific liquid handling, deck and labware setup, pipettes, modules, runtime parameters, liquid classes, and Opentrons App analysis. Use pylabrobot instead when one workflow must support multiple robot vendors.",
+          "sha256": "3600fece96f89e7cedc23d13e48ce7eb25a90698d7ae3d8bae65035d89f392ff"
+        },
+        {
+          "directory": "optimize-for-gpu",
+          "name": "optimize-for-gpu",
+          "description": "GPU-accelerates scientific Python on NVIDIA hardware and verifies that the result is correct and faster. Use for CUDA/GPU optimization; CPU-bound NumPy, SciPy, pandas, scikit-learn, NetworkX, scikit-image, vector-search, image-processing, graph, simulation, or file-I/O workloads; CuPy, cuDF, cuML, cuGraph, cuVS, cuCIM, KvikIO, Warp, Newton, Numba-CUDA, or RAFT questions; and profiling, memory-transfer, kernel, or multi-GPU bottlenecks. Also use when large data-parallel Python code is slow and GPU acceleration is a plausible option, even if the user does not name CUDA.",
+          "sha256": "e31bdb10b8ea66e5ec438583755999b66b9afab90f2583e1d500b8457ef28054"
+        },
+        {
+          "directory": "pacsomatic",
+          "name": "pacsomatic",
+          "description": "Prepares and launches nf-core/pacsomatic matched tumor-normal PacBio HiFi genomics workflows from unaligned BAM inputs. Supports samplesheet generation, pinned Nextflow launch artifacts, local checks, LSF/Slurm/PBS Pro/SGE launcher submission, and startup troubleshooting. Use for pacsomatic run preparation and execution, not general short-read somatic analysis or medical imaging PACS.",
+          "sha256": "5425319387beb29684ae5148cba33bd3a6c4306651ba574d47c76a8dc390d45d"
+        },
+        {
+          "directory": "paper-lookup",
+          "name": "paper-lookup",
+          "description": "Searches 18 scholarly APIs for papers, preprints, citations, open-access full text, repository records, and journal OA status, and returns results with reproducible provenance. Covers PubMed, PMC, Europe PMC, bioRxiv, medRxiv, arXiv, OpenAlex, Crossref, Semantic Scholar, CORE, Unpaywall, OpenCitations, PubTator3, Zenodo, Figshare, ROR, BioStudies, and DOAJ. Use when searching for papers, citations, DOI/PMID/arXiv lookups, abstracts, full text, open-access PDFs, preprints, citation graphs, author publications, biomedical entity annotations, deposited records (Zenodo, Figshare, BioStudies), institution ROR IDs, or any scholarly literature query. Triggers on mentions of any supported database or requests like \"find papers on X\", \"look up this DOI\", \"who cites this paper\", or \"get me the PDF\".",
+          "sha256": "fac99456ad404ff9a0d3043709b956b5d6383838ae8e8394f274a5693d8bd294"
+        },
+        {
+          "directory": "paperclip",
+          "name": "paperclip",
+          "description": "Searches and reads biomedical papers, FDA/PMDA/EMA documents, clinical trials, and protein records with the GXL Paperclip CLI and Python SDK. Supports source-scoped search, full-text grep, metadata SQL, map/reduce extraction, figure analysis, optional repositories and claim verification, and line-pinned citations. Use when a task names GXL paperclip, asks to install or authenticate it, or requests literature retrieval and evidence extraction through Paperclip.",
+          "sha256": "4f6fc05346aefdf5685b11d6d34fbe5b9782fc5156d69702c00dd8c71bf63473"
+        },
+        {
+          "directory": "paperzilla",
+          "name": "paperzilla",
+          "description": "Reads projects, searches project feeds, and retrieves recommendations and canonical papers in Paperzilla through the pz CLI. Supports recent recommendations, paper details, markdown-based summaries, recommendation feedback, JSON export, and Atom feed URLs.",
+          "sha256": "f1b5feb3c76ce064803e5d44757f0fc468bf670499015b9c6a9d487fca699771"
+        },
+        {
+          "directory": "parallel-web",
+          "name": "parallel-web",
+          "description": "Uses Parallel CLI for web search, URL extraction, deep research, structured data enrichment, entity discovery, and recurring web monitoring. Best for requests that explicitly need current web evidence, academic-source discovery, repeated entity lookups, exhaustive reports, or ongoing change tracking.",
+          "sha256": "04b4873674998c4fb47de017397e753d69049609135efed43a82572b9002f52c"
+        },
+        {
+          "directory": "pathml",
+          "name": "pathml",
+          "description": "Supports local computational pathology research with PathML: slide loading and tiling, preprocessing and QC, h5path storage, multiplex quantification, spatial graphs, and bounded model inference. Use for whole-slide H&E, CODEX, Vectra, Mesmer, HoVer-Net, and HACTNet workflows.",
+          "sha256": "654cef910bd567689b854eab52176628f39184d7cca7a6bf405343f337e58538"
+        },
+        {
+          "directory": "pathogen-variant-surveillance",
+          "name": "pathogen-variant-surveillance",
+          "description": "Queries public GenSpectrum LAPIS data for pathogen genomic surveillance, current lineage nomenclature, weekly sequence proportions, reporting delays, and descriptive mutation frequencies. Use for variant surveillance, Pango lineage validation, dominant submitted lineages, Nextclade assignment provenance, SARS-CoV-2, influenza/H5N1 clades, RSV, mpox, measles, dengue, or LAPIS queries. Distinguishes sequence prevalence from infection prevalence, clades from genotypes, missing calls from reference matches, and sampling changes from biological growth advantage.",
+          "sha256": "95510f890a47ab2e2275832fe60e725eca34e5318dcde88b0940d9362b3ab590"
+        },
+        {
+          "directory": "pathway-enrichment",
+          "name": "pathway-enrichment",
+          "description": "Performs pathway and gene-set enrichment analysis on gene lists or ranked gene data and interprets the results. Used when the user has a set of genes (differentially expressed genes from PyDESeq2/Scanpy, CRISPR-screen hits, cluster marker genes, proteomics hits) and wants to know which biological pathways, GO terms, or gene sets are over-represented or enriched. Covers over-representation analysis (ORA / Enrichr / Fisher / hypergeometric), ranked Gene Set Enrichment Analysis (GSEA / preranked), single-sample scoring (ssGSEA/GSVA), and functional profiling via gseapy, g:Profiler, Enrichr libraries, MSigDB, GO, KEGG, Reactome, and WikiPathways — plus gene-ID mapping, choosing the right background universe, multiple-testing correction, redundancy reduction, dotplots/enrichment maps, and publication-ready tables. Use this for \"pathway analysis\", \"enrichment analysis\", \"GO enrichment\", \"KEGG/Reactome pathways\", \"GSEA\", \"over-representation\", \"functional annotation\", or \"what pathways are my genes in\".",
+          "sha256": "82783d8ba63b6b03646492ee75afcdf591903a213decf7e7c9d844eb517acd78"
+        },
+        {
+          "directory": "pennylane",
+          "name": "pennylane",
+          "description": "Builds and differentiates PennyLane quantum circuits, hybrid PyTorch or JAX models, molecular VQE and QAOA workflows. Use for variational quantum algorithms, quantum machine learning, simulator validation, and moving validated circuits to provider plugins. For hardware-specific compilation use qiskit or cirq; for open-system dynamics use qutip.",
+          "sha256": "7908ee374ed9bef310bd7071a175d97e0428cec184cce3e36db9fe3ae8e77c52"
+        },
+        {
+          "directory": "phylogenetics",
+          "name": "phylogenetics",
+          "description": "Builds and analyzes phylogenetic trees using MAFFT multiple sequence alignment, IQ-TREE maximum likelihood with ModelFinder and branch support, and FastTree approximate inference. Uses ETE3 for tree summaries and visualization. Applies to homologous nucleotide or protein sequences, microbial gene trees, protein families, and cautiously interpreted dated phylogenies.",
+          "sha256": "eef2354a8fe6c51c2ad8a506e512326553bda52c731952598adef677ae2d67d5"
+        },
+        {
+          "directory": "pi-agent",
+          "name": "pi-agent",
+          "description": "Builds with and operates Pi, the minimal terminal coding harness. Use for installing Pi, configuring providers/models/settings/environment variables, creating Pi skills/extensions/packages/themes/prompt templates, embedding Pi through the SDK, integrating over RPC or JSON event streams, parsing sessions, running local models through the llama.cpp router, developing custom Pi providers and TUI components, or using ecosystem packages such as pi-subagents (delegation/orchestration), pi-mcp-adapter (MCP servers), pi-interview (interactive forms), and pi-web-access (web search, fetching, video understanding).",
+          "sha256": "ef84742b6e491b3f65941dbb19fdd508b0aada3b87d95aa28b0f66a111f7c748"
+        },
+        {
+          "directory": "pkpd-modeling",
+          "name": "pkpd-modeling",
+          "description": "Pharmacokinetic and pharmacodynamic modelling and simulation - non-compartmental analysis, compartmental and population PK, PK/PD and exposure-response, TMDD, PBPK orientation, bioequivalence, allometric scaling and first-in-human dose, drug interaction prediction, and Bayesian therapeutic drug monitoring. Use when analysing concentration-time data, deriving exposure metrics, fitting PK or PD models, or evaluating dosing regimens. Triggers include \"pharmacokinetics\", \"pharmacodynamics\", \"PK/PD\", \"NCA\", \"non-compartmental\", \"AUC\", \"Cmax\", \"lambda z\", \"half-life\", \"clearance\", \"volume of distribution\", \"compartmental model\", \"population PK\", \"popPK\", \"NONMEM\", \"nlmixr2\", \"Pharmpy\", \"Monolix\", \"exposure-response\", \"Emax\", \"EC50\", \"indirect response\", \"effect compartment\", \"TMDD\", \"PBPK\", \"bioequivalence\", \"RSABE\", \"ABEL\", \"allometric scaling\", \"first-in-human\", \"MABEL\", \"drug-drug interaction\", \"DDI\", \"ICH M12\", \"concentration-QTc\", \"therapeutic drug monitoring\", \"MIPD\", and \"dosing regimen\".",
+          "sha256": "fc58aed600d0fe9de911176cb0f2a43e8df6bbae8c2260be6f8abade133a2837"
+        },
+        {
+          "directory": "polars",
+          "name": "polars",
+          "description": "High-performance DataFrame library for Python ETL, analytics, and pandas migration. It supports expression-based data manipulation with lazy query optimization, parallel execution, streaming out-of-core processing, Arrow interoperability, and optional GPU execution.",
+          "sha256": "05d64a001190b516bc922bac616483c3109a6d29c3e9950e3e2d6c31b9415e79"
+        },
+        {
+          "directory": "polars-bio",
+          "name": "polars-bio",
+          "description": "Performs genomic interval overlap, nearest, merge, coverage, complement and subtraction on Polars DataFrames, and reads or writes BED, VCF, BCF, BAM, CRAM, GFF, GTF, FASTA and FASTQ data. Use for coordinate-aware genomic joins, read-depth analysis, lazy bioinformatics I/O, SQL queries or migration from bioframe.",
+          "sha256": "b9dbf93b5d8dbaa3de4541449b828cd6199625c54956e8598f7552eefc30116f"
+        },
+        {
+          "directory": "pptx-posters",
+          "name": "pptx-posters",
+          "description": "Creates and audits editable scientific posters in macro-free PowerPoint (.pptx) from author-approved local content and assets. Used when the requested deliverable is a PowerPoint research/conference poster and exact physical, printer, accessibility, provenance, and package-security checks are required.",
+          "sha256": "bb4923ec520ac5175f837e75c8b600344cc1eb71490b1fa9c809ac65e64f1fb9"
+        },
+        {
+          "directory": "primekg",
+          "name": "primekg",
+          "description": "Queries a pinned Precision Medicine Knowledge Graph (PrimeKG) CSV for typed gene, drug, disease, and phenotype nodes, direct associations, disease context, and one- or two-hop paths. Use for PrimeKG reproducibility, biological association lookup, and hypothesis generation with relation and data provenance preserved.",
+          "sha256": "b20698944fa51b287a13e7dc22ac033b83836b73614a21cff725ad7d6d807226"
+        },
+        {
+          "directory": "primer-design",
+          "name": "primer-design",
+          "description": "Designs and audits PCR and RT-qPCR primers with Primer3, explicit thermodynamic conditions, reference-based off-target amplification searches, and traceable sequence coordinates. Use for designing primer pairs, checking existing primers, exon-junction or isoform-specific assays, variant masking, cloning tails, multiplex compatibility, and interpreting Primer-BLAST results. Includes bounded local in-silico PCR and BLAST screening; distinguishes computational candidates from experimentally validated assays.",
+          "sha256": "ea8bed0aa340a5f6538c206bb3d9fe503da6759e68a944a2bce564fa115d25e4"
+        },
+        {
+          "directory": "protocolsio-integration",
+          "name": "protocolsio-integration",
+          "description": "Reads, validates, and safely exports protocols.io data with current official REST/MCP contracts, or creates non-executing mutation plans. The bundled client makes bounded official-host GET requests only with explicit --execute. Use only for tasks explicitly targeting protocols.io or an exact protocols.io protocol version.",
+          "sha256": "4439249ba8cd35a8507463f8be84db511abc23daa00be3f892c47d847d2aeda5"
+        },
+        {
+          "directory": "pufferlib",
+          "name": "pufferlib",
+          "description": "Version-aware guidance for PufferLib reinforcement-learning environments, vectorization, policies, PuffeRL training, evaluation, and safe checkpoint review. Covers the native 5.0 build and environment API, published 3.0.0 Gymnasium/PettingZoo adaptation, and a pinned historical 4.0 profile.",
+          "sha256": "031975c6abaabd8237c18b6472886f4a718c509da70fc6ebca06455f8a002fa7"
+        },
+        {
+          "directory": "pybamm",
+          "name": "pybamm",
+          "description": "Simulates lithium-ion battery charge, discharge and rest experiments with PyBaMM, records parameter-set provenance, checks mesh and solver sensitivity, and compares predicted voltage curves with measured cycling data. Use for SPM or DFN electrochemical battery modeling, C-rate protocols, voltage cutoffs, parameter studies and numerical validation of battery simulations.",
+          "sha256": "9d6f375f4d9def40072ea734f07e1a48c60a1cd906231cab1a4189a75499a1a4"
+        },
+        {
+          "directory": "pycalphad",
+          "name": "pycalphad",
+          "description": "Computes finite-temperature CALPHAD equilibria, phase fractions, and phase compositions from thermodynamic TDB databases using pycalphad. Use for alloy phase stability, equilibrium temperature sweeps, tie lines, lever-rule checks, or reproducible phase-fraction calculations with explicit components and mole-fraction conditions.",
+          "sha256": "7748a9413e22566316893d882596b5c2a321e9e03de93e6097c59a003e899a24"
+        },
+        {
+          "directory": "pydeseq2",
+          "name": "pydeseq2",
+          "description": "Performs bulk RNA-seq differential expression analysis with PyDESeq2, including count validation, formula designs, explicit contrasts, Wald tests, FDR correction, coefficient-matched LFC shrinkage, and result visualization. Use for PyDESeq2 or Python DESeq2 workflows with biological replicates.",
+          "sha256": "f06a9f5ece540c05bd8a8208bb3970d000b13cb1032abc9488cfbfe6106cd843"
+        },
+        {
+          "directory": "pydicom",
+          "name": "pydicom",
+          "description": "Reads, inspects, writes, transforms, and preflights local DICOM datasets and pixel data. Applies to DICOM metadata, transfer syntaxes, compression plugins, frames, private elements, JSON, and bounded de-identification review.",
+          "sha256": "e42c35688a3dc7e0faaf1d1e88c8883eabc60ad291d348bfe5aee89a64c95b01"
+        },
+        {
+          "directory": "pyhealth",
+          "name": "pyhealth",
+          "description": "Builds and validates PyHealth clinical machine-learning pipelines for EHR, signals, imaging, and medical codes. Use for PyHealth dataset loading, MIMIC-III/IV, eICU or OMOP prediction tasks, patient-level evaluation, mortality/readmission/length-of-stay modeling, medication recommendation, sleep staging, Trainer checkpoints, and ICD/ATC/NDC/RxNorm mapping.",
+          "sha256": "ec4de54618b71a4f8cfeb086d131c610127784a6839d842a67b3c1e87b66e161"
+        },
+        {
+          "directory": "pylabrobot",
+          "name": "pylabrobot",
+          "description": "Develops and reviews PyLabRobot lab-automation resources, liquid-handling plans, offline simulations, and supported-device integrations. Supports PyLabRobot protocols and API questions; keep physical execution behind an explicit operator safety gate.",
+          "sha256": "b2aab8871006d84e53621fc0f4886d0fd0c671007d112569e444e0a56a564d76"
+        },
+        {
+          "directory": "pymatgen",
+          "name": "pymatgen",
+          "description": "Analyzes, validates, converts, and transforms materials structures and computed materials data with pymatgen. Use for local phase diagrams, symmetry sensitivity, electronic-structure I/O, and bounded Materials Project queries.",
+          "sha256": "4a106d7682cd9881765700d534cb419458ba407935a59168547da1ae6ea4b6b1"
+        },
+        {
+          "directory": "pymc",
+          "name": "pymc",
+          "description": "Builds and checks Bayesian models with PyMC, including hierarchical models, NUTS MCMC, variational inference, mutable-data predictions, posterior predictive checks, diagnostics, and PSIS-LOO model comparison. Use for probabilistic modeling and uncertainty inference in PyMC.",
+          "sha256": "77d29ba7adf73d822329eab576d15a748811633a60bca88f5e93954793b3ea8a"
+        },
+        {
+          "directory": "pymoo",
+          "name": "pymoo",
+          "description": "Solves and validates single-, multi-, and many-objective optimization with pymoo, including NSGA-II, NSGA-III, MOEA/D, constraints, Pareto approximations, reference directions, and ZDT/DTLZ benchmarks for engineering and research problems.",
+          "sha256": "942573e5b8099717487b45cf84798348fb2128516791dcafe2d76aa1bdfed117"
+        },
+        {
+          "directory": "pyopenms",
+          "name": "pyopenms",
+          "description": "Processes mass spectrometry data with pyOpenMS. Supports proteomics and metabolomics workflows—feature detection, peptide/protein identification, label-free quantification, adduct/accurate-mass annotation, and complex LC-MS/MS pipelines. Supports extensive file formats and algorithms. For simple spectral comparison and small-molecule library matching use matchms.",
+          "sha256": "020e7392adbb000aaab4968ae9a803ca4bd97818ca35e9eebd3abc222766a48f"
+        },
+        {
+          "directory": "pysam",
+          "name": "pysam",
+          "description": "Provides Python/HTSlib workflows for genomic files. Used when reading, querying, filtering, or writing SAM/BAM/CRAM, VCF/BCF, FASTA/FASTQ, or tabix data with pysam, including pileup, coverage, indexing, and CRAM references.",
+          "sha256": "afc275bbeb084553cd6507c4ffee848c46bef94dcd24c3b8a58d8b14d021ea09"
+        },
+        {
+          "directory": "pytdc",
+          "name": "pytdc",
+          "description": "Provides Therapeutics Data Commons workflows through PyTDC for registry discovery, dataset access, task-aware splits, evaluator metrics, benchmark groups, and bounded molecular-oracle scoring. Use when working with TDC therapeutic ML datasets or benchmarks.",
+          "sha256": "b7df3f50c1c618a47a81e994b2863ddd8adf695e795aa495c3a8fef5e78a0493"
+        },
+        {
+          "directory": "pytorch-lightning",
+          "name": "pytorch-lightning",
+          "description": "Deep learning framework (PyTorch Lightning / lightning package). Organize PyTorch code into LightningModules, configure Trainers for multi-GPU/TPU, implement data pipelines, callbacks, logging (W&B, TensorBoard, MLflow), distributed training (DDP, FSDP, DeepSpeed), for scalable neural network training.",
+          "sha256": "d8829e74e8a1d908f923cf0c0a850ecfdd9edcb004d2fa90ec32fb1ed0006ce8"
+        },
+        {
+          "directory": "pyzotero",
+          "name": "pyzotero",
+          "description": "Manages Zotero reference libraries using the pyzotero Python client: retrieves, creates, updates, and deletes items, collections, tags, and attachments via the Zotero Web API v3 or local API. Applies when working with Zotero libraries programmatically, managing bibliographic references, exporting citations, searching library contents, uploading PDF attachments, or building research automation workflows that integrate with Zotero.",
+          "sha256": "82dec36c7294674f33d9b6003e523d1dc4da33ed1c7427dc4e53731119fc5f74"
+        },
+        {
+          "directory": "qiime2-amplicon",
+          "name": "qiime2-amplicon",
+          "description": "Processes paired-end 16S amplicon reads into QIIME 2 ASVs and taxonomy with retained artifact provenance. Checks paired FASTQ manifests, primer orientation diagnostics, predicted post-trimming overlap, sample IDs, runtime versions and read retention, and guides selection of compatible taxonomic classifiers.",
+          "sha256": "605ae0581620f654ca9e12122a2bdb1d62a813841c5fea61b0eacb2031377cf7"
+        },
+        {
+          "directory": "qiskit",
+          "name": "qiskit",
+          "description": "Builds, simulates, transpiles, and executes quantum circuits with Qiskit and IBM Quantum Runtime. Use for Qiskit 2.x circuits and operators, V2 Sampler or Estimator primitives, target-aware transpilation, local or noisy simulation, IBM QPU execution, Runtime sessions or batches, error mitigation, and Qiskit ecosystem packages.",
+          "sha256": "538e5db262e7c237cff2bac191480f81688b8679167740af7405fcda1340511e"
+        },
+        {
+          "directory": "qutip",
+          "name": "qutip",
+          "description": "Simulate and audit closed and open quantum-system models with QuTiP 5, including deterministic, trajectory, steady-state, spectral, and phase-space workflows. Use for local quantum-dynamics work where physical assumptions, dimensions, and numerical convergence must be explicit.",
+          "sha256": "6b93a95eb586147b2f1639f7e669dece3182ab4ddd70b1200291073cfd533902"
+        },
+        {
+          "directory": "rdkit",
+          "name": "rdkit",
+          "description": "Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprints, substructure search, 2D/3D generation, similarity, reactions. For standard workflows with simpler interface, use datamol (wrapper around RDKit). Use rdkit for advanced control, custom sanitization, specialized algorithms.",
+          "sha256": "9f32d5d229bc1a5bac3e57de5fb87895cdb85dcc99132c57373905db0e1a941e"
+        },
+        {
+          "directory": "relion",
+          "name": "relion",
+          "description": "Validates and executes RELION single-particle cryo-EM refinement and half-map postprocessing. Supports STAR optics/acquisition checks, particle-stack consistency, gold-standard half sets, soft-mask validation, diagnostic Fourier shell correlation, and restart guidance.",
+          "sha256": "3f80369ef73ccb8c20e2e49ad2b9bd71da3ffa4a819c035691ca4a5b26cb8399"
+        },
+        {
+          "directory": "relsa-severity-assessment",
+          "name": "relsa-severity-assessment",
+          "description": "Supports multivariate severity assessment and exploratory endpoint-time score forecasting for laboratory animal studies using the RELSA (RELative Severity Assessment) score and ARIMA-based foRcast forecasting. Use when combining welfare readouts — body weight or weight loss, body temperature, clinical or nesting scores, biomarkers, activity, heart rate, burrowing, wheel running — into one severity score per animal per day, when asking which animals are at risk of reaching a humane endpoint at a specified future observation time, when defining attention/danger zones or thresholds on a severity scale by kernel density estimation, or when reporting severity for a 3Rs, refinement, animal-welfare, or EU Directive 2010/63/EU severity-assessment context. Covers directionality (\"turned\" variables), baseline normalization, reference sets, RELSA weights, ARIMA prediction intervals, and RMSE/PICP/MPIW evaluation.",
+          "sha256": "10ee1a904565f5e9c9d432b3af136db42927d0811f07f646355600fec6633f8a"
+        },
+        {
+          "directory": "research-grants",
+          "name": "research-grants",
+          "description": "Supports research proposal preparation and review for NSF, NIH, DOE, DARPA, and Taiwan NSTC, including opportunity-specific requirements, aims, review criteria, budgets, broader impacts, forms, and resubmissions. Use for investigator-authored grant development, compliance matrices, and proposal critiques.",
+          "sha256": "3ca7ea8075bbe8008389660cc4a5769d66ac9ec638f3f61a955a5d7b20aeba85"
+        },
+        {
+          "directory": "research-lookup",
+          "name": "research-lookup",
+          "description": "Compiles current scholarly evidence for a scientific manuscript or research brief when the user explicitly asks to gather literature, references, background evidence, competing findings, or a manuscript research packet. Uses Parallel Search by default, Parallel Extract for source retrieval, Parallel Research for explicitly deep/exhaustive work, optional explicit Parallel Chat, and optional Perplexity only when requested or allowed as a failure fallback.",
+          "sha256": "8da1618350bf3434e4569a180a15b7241a50118ee9b79bccc514fa1bf3b4a102"
+        },
+        {
+          "directory": "rowan",
+          "name": "rowan",
+          "description": "Rowan is a cloud-native molecular modeling and medicinal-chemistry workflow platform with a Python API. Use for pKa and macropKa prediction, conformer and tautomer ensembles, docking and analogue docking, protein-ligand cofolding, MSA generation, molecular dynamics, permeability, descriptor workflows, and related small-molecule or protein modeling tasks. Ideal for programmatic batch screening, multi-step chemistry pipelines, and workflows that would otherwise require maintaining local HPC/GPU infrastructure.",
+          "sha256": "d631f00ae0f9325aa58912bb571b7eb43bc42c553498e4c97f4d65a1683c8599"
+        },
+        {
+          "directory": "scanpy",
+          "name": "scanpy",
+          "description": "Performs Scanpy single-cell RNA-seq QC, normalization, HVG selection, PCA/UMAP/t-SNE, clustering, exploratory marker ranking, pseudobulk preparation, visualization, and Seurat or SingleCellExperiment RDS conversion to h5ad. Applies to established exploratory scRNA-seq workflows with explicit count and expression provenance; complementary skills cover scvi-tools models and AnnData format details.",
+          "sha256": "4a59f87933a1e9ed49eac603719af1b0c606dd99050fe59ffa1c1bf807900cb8"
+        },
+        {
+          "directory": "scholar-evaluation",
+          "name": "scholar-evaluation",
+          "description": "Provides qualitative-first, evidence-traceable developmental review of scholarly works and audit low-stakes research-assessment rubrics with optional local quality controls. Never use for ranking people or consequential decisions.",
+          "sha256": "9abc66a9ba13f6cf0f61614ddfff17822b5be2cc7118f52ef2631323dac8c94e"
+        },
+        {
+          "directory": "scientific-brainstorming",
+          "name": "scientific-brainstorming",
+          "description": "Facilitates evidence-aware scientific ideation with independent generation, structured discussion, explicit assumptions, transparent evaluation, adversarial review, and decision logs. Use for early-stage research brainstorming or prioritizing candidate directions; hand off empirical validation, study design, ethics or regulatory review, and clinical questions to appropriate experts or skills.",
+          "sha256": "06f73b71556356a7f488c369b9445d7943543a3f14d159b2168fd3f621d6f8a9"
+        },
+        {
+          "directory": "scientific-critical-thinking",
+          "name": "scientific-critical-thinking",
+          "description": "Evaluates scientific claims and evidence quality. Applies to experimental design validity, biases and confounders, statistical interpretation, evidence grading frameworks (GRADE, Cochrane Risk of Bias), and teaching critical analysis. Supports evidence appraisal and identifying flaws; formal peer review writing belongs to peer-review.",
+          "sha256": "563af70571b7dcd6a96bf2e303bedfdcba623b4e9f082d58f04aacbc961fdae4"
+        },
+        {
+          "directory": "scientific-schematics",
+          "name": "scientific-schematics",
+          "description": "Generates scientific diagram drafts using Nano Banana 2 AI with smart iterative refinement. Uses Gemini 3.7 Flash for quality review. Refines when the review requests improvement, with at most two generations. Specialized in neural network architectures, system diagrams, flowcharts, biological pathways, and complex scientific visualizations.",
+          "sha256": "e15d761ef88013c98fd5b19cc144aba7336e20dbadf340db17bd1ba2227d1d69"
+        },
+        {
+          "directory": "scientific-slides",
+          "name": "scientific-slides",
+          "description": "Builds slide decks and presentations for research talks. Used for making PowerPoint slides, conference presentations, seminar talks, research presentations, thesis defense slides, or any scientific talk. Provides slide structure, design templates, timing guidance, and visual validation. Works with PowerPoint and LaTeX Beamer.",
+          "sha256": "b1d34b81d30789f561bd4ee3ddb373c9fb84bed25086794bebd842af46afbad6"
+        },
+        {
+          "directory": "scientific-visualization",
+          "name": "scientific-visualization",
+          "description": "Creates and audits truthful, accessible, publication-ready scientific figures with Matplotlib, Seaborn, or Plotly. Use it for figure design, multi-panel layouts, uncertainty and missing-data displays, color/contrast review, image metadata validation, and journal export planning.",
+          "sha256": "8cbde7cdc10d959cf72cfd08335cc8ce996247eee6ebdb900eb64a4cb0ff34a3"
+        },
+        {
+          "directory": "scientific-writing",
+          "name": "scientific-writing",
+          "description": "Drafts, revises, and audits scientific manuscripts or reports with explicit evidence provenance, reporting-guideline coverage, authorship accountability, confidentiality controls, and local consistency checks. Use for manuscript sections, references, declarations, tables, figures, or submission preparation when scientific accuracy and traceability matter.",
+          "sha256": "511a2096bebecd8cf0f8212b9d262d37154ae1ba566eb385d93ac968682edbd1"
+        },
+        {
+          "directory": "scikit-bio",
+          "name": "scikit-bio",
+          "description": "Biological data toolkit. Sequence analysis, alignments, phylogenetic trees, diversity metrics (alpha/beta, UniFrac), ordination (PCoA), PERMANOVA, FASTA/Newick I/O, for microbiome analysis.",
+          "sha256": "4a7a5760adadf32782dc4694028371df13b25472ff8ffe4cef2b2fc564226f6c"
+        },
+        {
+          "directory": "scikit-learn",
+          "name": "scikit-learn",
+          "description": "Supports machine learning in Python with scikit-learn. Applies when working with supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), model evaluation, hyperparameter tuning, preprocessing, or building ML pipelines. Provides comprehensive reference documentation for algorithms, preprocessing techniques, pipelines, and best practices.",
+          "sha256": "a1765797d072ab40094522abe68fb04505d0881f66b7dfceeb8582422dbe488d"
+        },
+        {
+          "directory": "scikit-survival",
+          "name": "scikit-survival",
+          "description": "Builds, evaluates, and audits right-censored or competing-risk survival workflows with scikit-survival, including leakage-safe preprocessing, model selection, probability prediction, and censoring-aware metrics.",
+          "sha256": "8f99860440f23312d9803d3ac65ae9eb65274597d59499f1021d59378adef2fb"
+        },
+        {
+          "directory": "scvelo",
+          "name": "scvelo",
+          "description": "Performs RNA velocity analysis with scVelo from spliced and unspliced single-cell RNA counts. Fits deterministic or dynamical models, examines gene phase portraits, builds velocity graphs, estimates relative latent time, and ranks velocity-associated genes. Use for directional trajectory hypotheses and kinetic-model diagnostics alongside Scanpy; velocity alone does not establish cell fate or causal drivers.",
+          "sha256": "c43258bccdbaa5772fd1aeac8d12d6107dd9c9b19c6a3a81fde7d421c0d2609e"
+        },
+        {
+          "directory": "scvi-tools",
+          "name": "scvi-tools",
+          "description": "Fits probabilistic models for single-cell omics, including scVI batch integration, scANVI annotation, totalVI CITE-seq, MultiVI RNA/ATAC integration, and posterior differential expression. Use for generative modeling, reference mapping, multimodal analysis, or model-based uncertainty; use scanpy for standard preprocessing and exploratory analysis.",
+          "sha256": "b22633470d40ddaf31451fbbf811941fc89c3174c404ca359f25378691267e73"
+        },
+        {
+          "directory": "seaborn",
+          "name": "seaborn",
+          "description": "Creates Seaborn statistical visualizations with pandas integration for distributions, relationships, categorical comparisons, regression displays, pair plots, and heatmaps. Supports function and objects interfaces with explicit aggregation, uncertainty, and missing-data handling. Best suited to static exploratory plots; plotly covers interactive figures and scientific-visualization covers publication styling.",
+          "sha256": "d1500d1e3d9db1db4c72cd272861378d1b98b0b5a5a98e8a3fca5a45bc0c6b2e"
+        },
+        {
+          "directory": "shap",
+          "name": "shap",
+          "description": "Explain and audit machine-learning predictions with SHAP. Use for selecting SHAP explainers and maskers, computing and validating feature attributions, handling multi-output explanations, and producing local or global SHAP visualizations.",
+          "sha256": "9c395662e608accd60acb62158f1d25299b12ec0e40f9f94b70a46ec527d52c1"
+        },
+        {
+          "directory": "simpy",
+          "name": "simpy",
+          "description": "Builds, inspects, tests, and analyzes bounded process-based discrete-event simulations with SimPy. Use for event scheduling, resource queues, interrupts, monitoring, independent replications, warm-up, and reproducible output analysis.",
+          "sha256": "027244a3587e70c3e2f1aed4bfb5d737cb24fdc6b2ad276302ed81c02e38a7fc"
+        },
+        {
+          "directory": "stable-baselines3",
+          "name": "stable-baselines3",
+          "description": "Trains and evaluates single-agent reinforcement learning with Stable Baselines3 (PPO, SAC, DQN, TD3, DDPG, A2C), Gymnasium custom environments, vectorized rollouts, callbacks, and checkpoint normalization. Applies to reproducible RL experiments, continuous control, discrete actions, and SB3-Contrib recurrent or masked policies.",
+          "sha256": "8383ae480e27163b9dbe1d9af822e05f0e85dd05b5bab1f6444588d57f569837"
+        },
+        {
+          "directory": "statistical-power",
+          "name": "statistical-power",
+          "description": "Calculates sample sizes and statistical power for study planning. Applies when someone asks \"how many subjects/samples/replicates do I need\", wants an a priori power analysis, a minimum detectable effect (MDE), a power curve, or needs to justify a sample size for a grant, IRB protocol, or pre-registration. Covers closed-form power for t-tests, ANOVA, proportions, correlations, chi-square, and regression, plus simulation-based (Monte Carlo) power for complex designs — logistic/Poisson regression, mixed models, cluster-randomized trials, survival, and interactions. Also handles requests that only mention an effect size, alpha, or \"80% power\" without saying \"power analysis\" explicitly. For laying out the study (randomization, blocking, factorial/DOE, crossover, sequential designs) use experimental-design; for analyzing data already collected and reporting it use statistical-analysis.",
+          "sha256": "a969660eafdc3504ac36e49bd7ded00e18b00fe5cef5699940d5d8281e24dd3d"
+        },
+        {
+          "directory": "statsmodels",
+          "name": "statsmodels",
+          "description": "Fits and diagnoses Python statistical models including OLS, GLM, discrete and mixed models, ARIMA and SARIMAX. Supports coefficient inference, marginal effects, model comparison and time series forecasting with explicit design and uncertainty checks. Used for econometrics and statistical modeling; for guided test selection with APA reporting, see statistical-analysis.",
+          "sha256": "9e6c034bb4acbf0972fda18892d2feea907885ac5ad7194d220182d8810295a3"
+        },
+        {
+          "directory": "sympy",
+          "name": "sympy",
+          "description": "Performs exact symbolic mathematics with SymPy for algebra, calculus, equation solving, symbolic linear algebra, physics, and lambdify or LaTeX code generation. Use when a task needs symbolic results, explicit assumptions, or exact arithmetic; use NumPy or SciPy for purely numerical workloads.",
+          "sha256": "bb97087bdddccc845401737ddc7f7a8da1c14ced5e8d40da01271c991ac46e23"
+        },
+        {
+          "directory": "tamarind",
+          "name": "tamarind",
+          "description": "Provides access to a collection of open-source molecular design and structural biology tools on the Tamarind Bio platform, via its REST API or MCP server — no local GPUs required. Tamarind bundles popular open-source models for structure prediction (AlphaFold, Boltz, Chai, ESMFold), protein, binder, and de novo design (RFdiffusion, ProteinMPNN, BoltzGen), antibody and nanobody design and developability, protein-ligand docking (DiffDock, Autodock Vina), binding-affinity prediction, MSA generation, and molecular dynamics. Use when the user mentions Tamarind or tamarind.bio, wants to run any of these open-source tools in the cloud, references app.tamarind.bio/api or the x-api-key header, or needs to submit batches of sequences for structural or biophysical characterization.",
+          "sha256": "aa9bb0aa10acefa52621acd9ba06604997ed2f3d20533359f47d4b24dfdc9494"
+        },
+        {
+          "directory": "tellurium",
+          "name": "tellurium",
+          "description": "Simulates biochemical kinetic models from SBML or Antimony with Tellurium and libRoadRunner, checks model units, compares deterministic parameter perturbations, and exports and replays SBML plus SED-ML COMBINE archives. Use for reaction-network time courses, kinetic parameters, concentration dynamics and reproducible simulation experiments; steady-state constraint-based metabolic flux analysis belongs to cobrapy.",
+          "sha256": "69faa97aa45e7ad46515acd3e6497b044b7b44624ffd28c74fb40d97c74513a7"
+        },
+        {
+          "directory": "tiledbvcf",
+          "name": "tiledbvcf",
+          "description": "Stores and retrieves genomic variant calls with TileDB-VCF. Use for indexed single-sample VCF/BCF ingestion, incremental cohorts, region and sample queries, streaming results, allele statistics, QC, and VCF/BCF export locally or through TileDB Cloud.",
+          "sha256": "38e55a6962e14637e82f60be8e53e6d87c78f1a7874b9f832f442a038942f7d5"
+        },
+        {
+          "directory": "timesfm-forecasting",
+          "name": "timesfm-forecasting",
+          "description": "Performs zero-shot time-series forecasting with Google's TimesFM, including regular-grid CSV preparation, quantile forecasts, XReg covariates, and held-out evaluation. Uses the Apache-licensed TimesFM 2.5 checkpoint by default and documents the distinct TimesFM 3.0 multivariate API and weight-license requirements.",
+          "sha256": "6f785fe73b133e9af7720fa46cf9013645198950155624889ef611b7b0dc74b8"
+        },
+        {
+          "directory": "torch-geometric",
+          "name": "torch-geometric",
+          "description": "Supports PyTorch Geometric (PyG) graph neural networks — node/link/graph classification, message passing (GCN, GAT, GraphSAGE, GIN), heterogeneous graphs, neighbor sampling, and custom datasets. Use when working with torch_geometric, not for general NetworkX analytics or non-graph PyTorch models.",
+          "sha256": "89805e17cdbc64ed01426548442b3aa1bda8bcfdd4f9528f5c8dd6e0ea813c96"
+        },
+        {
+          "directory": "torchdrug",
+          "name": "torchdrug",
+          "description": "Builds and troubleshoots TorchDrug 0.2.1 workflows for molecular graphs, property prediction, self-supervised pretraining, molecule generation, retrosynthesis, protein representation learning, and knowledge graph reasoning. Use when code imports torchdrug or needs its datasets, models, tasks, or Engine.",
+          "sha256": "03538274e00aad262d159ca5ebed55fe6519d605171569feff44afeb781088fd"
+        },
+        {
+          "directory": "transformers",
+          "name": "transformers",
+          "description": "Hugging Face Transformers for loading Hub models, running pipeline inference, text generation, and Trainer fine-tuning on NLP, vision, audio, and multimodal tasks. Applies when working with AutoModel, pipelines, tokenizers, generation configs, or TrainingArguments within Transformers.",
+          "sha256": "584d1c35d513f87616df9bcf7ddc8c48ab38cfbfad18d55c8481578d1c0d6f1a"
+        },
+        {
+          "directory": "treatment-plans",
+          "name": "treatment-plans",
+          "description": "Formats and structurally validates local treatment-plan documentation after clinical decisions have already been supplied and verified by authorized licensed professionals. Use for source traceability, clinician-authored intervention records, goals and checkpoints, shared-decision records, reconciliation handoffs, and release gates—not for clinical decision-making.",
+          "sha256": "ebb509854e12d016475ee6d45834a2a72c16815d1b9d940a9d156e7f024cbed6"
+        },
+        {
+          "directory": "umap-learn",
+          "name": "umap-learn",
+          "description": "Applies UMAP-learn to nonlinear dimensionality reduction, 2D/3D embeddings, clustering preprocessing, supervised or semi-supervised UMAP, DensMAP, AlignedUMAP, and Parametric UMAP workflows.",
+          "sha256": "0cfef32ae0e1d52eec6513bafc0ab4387cf38e43121fba715762b2b2c11b6930"
+        },
+        {
+          "directory": "uncertainty-and-units",
+          "name": "uncertainty-and-units",
+          "description": "Tracks physical units and propagates measurement uncertainty in scientific calculations using pint and uncertainties. Use for unit conversion and dimensional checking, GUM uncertainty budgets, Type A and Type B evaluation, coverage factors and expanded uncertainty, Monte Carlo propagation, significant-figure and plus-minus reporting, error propagation through curve fits, CODATA constants, auditing Python code for stripped units or broken uncertainty propagation, and order-of-magnitude plausibility checks using dimensionless groups (Reynolds, Peclet, Damkohler, Knudsen, Biot, Womersley), characteristic scales such as diffusion time or Debye length, and observed magnitude ranges. Trigger on \"is this number physically reasonable\", \"sanity check these units\", \"what regime is this flow in\", or a result that looks off by orders of magnitude.",
+          "sha256": "caaafa079a4eaac6012717bcf705dec0417b5434f5dbd1af934a3a36ad375722"
+        },
+        {
+          "directory": "usfiscaldata",
+          "name": "usfiscaldata",
+          "description": "Queries the U.S. Treasury Fiscal Data REST API for federal financial data. No API key required. Use for national debt (Debt to the Penny), Daily Treasury Statements, Monthly Treasury Statements, Treasury securities auctions, interest rates, foreign exchange rates, savings bonds, or U.S. government revenue and spending statistics.",
+          "sha256": "7cdcb756489ae8e94a73df1eebfb9abef554e912af6559ebd28dffa021ab63d5"
+        },
+        {
+          "directory": "vaex",
+          "name": "vaex",
+          "description": "Processes large tabular scientific datasets with Vaex expressions, filtered views, streamed statistics, binned visualizations, and file conversion. Use for larger-than-RAM HDF5, Arrow, CSV, or Parquet analysis, virtual feature engineering, or Vaex ML preprocessing; distinguishes these operations from estimators and conversions that materialize data.",
+          "sha256": "a8ab5bcb0ab9c8d372b987e584b5c589a15b1e2b2f73457546d2888988d40b4f"
+        },
+        {
+          "directory": "venue-templates",
+          "name": "venue-templates",
+          "description": "Prepares journal manuscripts, conference papers, research posters, and grant documents using venue-specific formatting guidance and bundled LaTeX scaffolds. Supports selecting an official template, checking current page or anonymity rules, adapting academic writing to a venue, or inspecting a submission PDF.",
+          "sha256": "8607993327f451cc6b9d7ca7502c0e7d5f5060954fec12e2ea779d96841e78b5"
+        },
+        {
+          "directory": "waypoint-bio",
+          "name": "waypoint-bio",
+          "description": "Supports work with Outpost Bio's open microbiome foundation models - the Waypoint checkpoints (Waypoint-6m, Waypoint-45m, Waypoint-170m), the Atlas pretraining corpus, the Compass eight-task benchmark, or the `waypoint` CLI from the `waypoint-bio` package. Covers embedding microbiome samples, fine-tuning on taxonomic abundance data, benchmarking a checkpoint on Compass, pretraining a GPT-2 model on taxonomic abundance profiles, and converting MetaPhlAn, Kraken2, QIIME 2, or MGnify abundance tables into waypoint format.",
+          "sha256": "132d1f33d5d99bd6288a4cb432b277fcbc0f8bc4315e333dcecb840e7adc87a5"
+        },
+        {
+          "directory": "what-if-oracle",
+          "name": "what-if-oracle",
+          "description": "Supports structured what-if scenario analysis for research planning, experimental contingencies, and scientific project decisions. Explores favorable, reference, adverse, wild-card, contrarian, and second-order scenarios with explicit assumptions, evidence, and decision triggers. Use to stress-test a research plan under uncertainty; scenario narratives do not estimate causal effects or calibrated forecast probabilities.",
+          "sha256": "509af149c8cfc8f17dd15608d6337eb8a7ff3f4056fcadeda573c5e527c68a97"
+        },
+        {
+          "directory": "zarr-python",
+          "name": "zarr-python",
+          "description": "Stores and queries chunked N-D scientific arrays with Zarr-Python 3, including codecs, sharding, S3/GCS storage, and NumPy/Dask/Xarray integration. Use for array layout, bounded I/O, format migration, or scientific metadata preservation.",
+          "sha256": "1edaabfc3fc618d4c3a16bd70c589c039a3cb3a26683f02bca0ccc140d3c9c4d"
+        },
+        {
+          "directory": "literature-review",
+          "name": "literature-review",
+          "description": "Conducts systematic, scoping, and narrative literature reviews using PubMed, arXiv, bioRxiv, Semantic Scholar, and other appropriate sources. Use for research synthesis, reproducible literature searches, screening, citation checking, or preparing Markdown and PDF reviews. Tracks search coverage, records versus studies, and evidence limitations; supports meta-analysis planning but does not supply a meta-analysis engine.",
+          "sha256": "16a9e85bcdcb9bb859e1646bf836e51b22900445ba2e367d8d75be05b5a5cba8"
+        },
+        {
+          "directory": "peer-review",
+          "name": "peer-review",
+          "description": "Prepares evidence-bounded, constructive peer-review drafts and structured manuscript assessments. Supports authorized review of scientific manuscripts, protocols, preprints, or research proposals; reporting-guideline selection; claim–evidence checks; methods, statistics, reproducibility, ethics, figure/table, and citation critique; or revision-response planning.",
+          "sha256": "a042ccdc76d3399431b9a6c4cd4f98968eab964b1c14baeea4d9e73de82c7d19"
+        },
+        {
+          "directory": "statistical-analysis",
+          "name": "statistical-analysis",
+          "description": "Guided statistical analysis for research data - test selection, assumption checking, effect sizes, power analysis, Bayesian alternatives, and APA-formatted reporting. Use whenever a user wants to compare groups, test a hypothesis, analyze experimental or survey data, check statistical assumptions, compute required sample sizes, or write up results - even if they never name a specific test. Covers t-tests, ANOVA, chi-square, correlation, regression, non-parametric and Bayesian methods. For low-level model APIs, see the statsmodels and pymc skills.",
+          "sha256": "e112848726b3713267cac65e4e2c15491a0a26ee1ed628db01195f7e43f97997"
+        }
+      ]
+    },
+    {
+      "repo": "brycewang-stanford/Auto-Empirical-Research-Skills",
+      "commit": "9fa87d86e34d6c9a1c7cdb0db755c83c780537a0",
+      "mode": "whole",
+      "skills": [
+        {
+          "directory": "auto-empirical-research-skills",
+          "name": "auto-empirical-research-skills",
+          "description": "Route empirical-research requests through the Auto-Empirical Research Skills catalog when this whole repository is installed as one skill in Codex, CodeBuddy, Claude Code, or another IDE. Use to choose and load the right vendored AERS skill for causal inference, econometrics, replication, data acquisition, manuscript writing, peer review and referee responses, citation checking, de-AIGC editing, or full empirical-paper workflows, or an end-to-end run from raw data all the way to a finished Word (.docx) manuscript, without reading the entire repository at once.",
+          "sha256": "eeceafd088e3fa05c9ee09e516a1b6886dd9febebc532291dc2363eb192a700a"
+        }
+      ]
+    },
+    {
+      "repo": "Master-cai/Research-Paper-Writing-Skills",
+      "commit": "77e7c2c1ba06f7d71844873147665437a03aac1b",
+      "mode": "normal",
+      "skills": [
+        {
+          "directory": "research-paper-writing",
+          "name": "research-paper-writing",
+          "description": "Improve academic paper writing quality for ML/CV/NLP-style papers with clear section structure, paragraph flow, and reviewer-facing presentation. Use when drafting or revising Abstract, Introduction, Related Work, Method, Experiments, or Conclusion; polishing figures/tables; checking claim-support alignment; or performing self-review before submission.",
+          "sha256": "62ef11c06f2796c74e55ab24908ed31bafebfa0f1b736499d1615ac374cf7f6d"
+        }
+      ]
+    },
+    {
+      "repo": "Orchestra-Research/AI-Research-SKILLs",
+      "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+      "mode": "normal",
+      "skills": [
+        {
+          "directory": "autoresearch",
+          "name": "autoresearch",
+          "description": "Orchestrates end-to-end autonomous AI research projects using a two-loop architecture. The inner loop runs rapid experiment iterations with clear optimization targets. The outer loop synthesizes results, identifies patterns, and steers research direction. Routes to domain-specific skills for execution, supports continuous agent operation via Claude Code /loop and OpenClaw heartbeat, and produces research presentations and papers. Use when starting a research project, running autonomous experiments, or managing a multi-hypothesis research effort.",
+          "sha256": "b7ca0d7a6e905da85a8b494d3fe398ac78eaa278854f67b50a34f2b37a9a2b78"
+        },
+        {
+          "directory": "implementing-llms-litgpt",
+          "name": "implementing-llms-litgpt",
+          "description": "Implements and trains LLMs using Lightning AI's LitGPT with 20+ pretrained architectures (Llama, Gemma, Phi, Qwen, Mistral). Use when need clean model implementations, educational understanding of architectures, or production fine-tuning with LoRA/QLoRA. Single-file implementations, no abstraction layers.",
+          "sha256": "523f0b786c915af20a7980857e174b838e4440afe851bd16917ef69f8042adb2"
+        },
+        {
+          "directory": "mamba-architecture",
+          "name": "mamba-architecture",
+          "description": "State-space model with O(n) complexity vs Transformers' O(n²). 5× faster inference, million-token sequences, no KV cache. Selective SSM with hardware-aware design. Mamba-1 (d_state=16) and Mamba-2 (d_state=128, multi-head). Models 130M-2.8B on HuggingFace.",
+          "sha256": "51ddf99c12a472a78c258bddf7e66e72cf45d9e04969f3300cc8d68aaaef9b0e"
+        },
+        {
+          "directory": "nanogpt",
+          "name": "nanogpt",
+          "description": "Educational GPT implementation in ~300 lines. Reproduces GPT-2 (124M) on OpenWebText. Clean, hackable code for learning transformers. By Andrej Karpathy. Perfect for understanding GPT architecture from scratch. Train on Shakespeare (CPU) or OpenWebText (multi-GPU).",
+          "sha256": "8893d8dd5b7ba4ae3219497e26d33fc9565e6bbf0d6aa4d6c1c3ee05003468c3"
+        },
+        {
+          "directory": "rwkv-architecture",
+          "name": "rwkv-architecture",
+          "description": "RNN+Transformer hybrid with O(n) inference. Linear time, infinite context, no KV cache. Train like GPT (parallel), infer like RNN (sequential). Linux Foundation AI project. Production at Windows, Office, NeMo. RWKV-7 (March 2025). Models up to 14B parameters.",
+          "sha256": "17fc974b3f3b67b1648c5cb93b3bdc557fbd64df8463d8fbc8f71bdf88575a7c"
+        },
+        {
+          "directory": "distributed-llm-pretraining-torchtitan",
+          "name": "distributed-llm-pretraining-torchtitan",
+          "description": "Provides PyTorch-native distributed LLM pretraining using torchtitan with 4D parallelism (FSDP2, TP, PP, CP). Use when pretraining Llama 3.1, DeepSeek V3, or custom models at scale from 8 to 512+ GPUs with Float8, torch.compile, and distributed checkpointing.",
+          "sha256": "530b85ddadfc69e2cfd3bbdd7cdb03c89f7ddd00ba0e84fed8ac43e98a25a4d8"
+        },
+        {
+          "directory": "huggingface-tokenizers",
+          "name": "huggingface-tokenizers",
+          "description": "Fast tokenizers optimized for research and production. Rust-based implementation tokenizes 1GB in <20 seconds. Supports BPE, WordPiece, and Unigram algorithms. Train custom vocabularies, track alignments, handle padding/truncation. Integrates seamlessly with transformers. Use when you need high-performance tokenization or custom tokenizer training.",
+          "sha256": "d2ff3f9eed2cb8e15cb98e8e2398ca359325a32fd5d16ebfe0d115d7624583af"
+        },
+        {
+          "directory": "sentencepiece",
+          "name": "sentencepiece",
+          "description": "Language-independent tokenizer treating text as raw Unicode. Supports BPE and Unigram algorithms. Fast (50k sentences/sec), lightweight (6MB memory), deterministic vocabulary. Used by T5, ALBERT, XLNet, mBART. Train on raw text without pre-tokenization. Use when you need multilingual support, CJK languages, or reproducible tokenization.",
+          "sha256": "47b1d10f419a51a400010bcd80d99a8bdb5c4510fc3e57fe9bc9be7efa6a48f8"
+        },
+        {
+          "directory": "axolotl",
+          "name": "axolotl",
+          "description": "Expert guidance for fine-tuning LLMs with Axolotl - YAML configs, 100+ models, LoRA/QLoRA, DPO/KTO/ORPO/GRPO, multimodal support",
+          "sha256": "9273d534cd6a06612b18418f2cd98f63d1ac9bb780eda511a91800dee48f1dda"
+        },
+        {
+          "directory": "llama-factory",
+          "name": "llama-factory",
+          "description": "Expert guidance for fine-tuning LLMs with LLaMA-Factory - WebUI no-code, 100+ models, 2/3/4/5/6/8-bit QLoRA, multimodal support",
+          "sha256": "6adfd1babfbfe2f85e0fcbde518f24a804ebe06afeb8682ce1df395284d6f5cb"
+        },
+        {
+          "directory": "peft-fine-tuning",
+          "name": "peft-fine-tuning",
+          "description": "Parameter-efficient fine-tuning for LLMs using LoRA, QLoRA, and 25+ methods. Use when fine-tuning large models (7B-70B) with limited GPU memory, when you need to train <1% of parameters with minimal accuracy loss, or for multi-adapter serving. HuggingFace's official library integrated with transformers ecosystem.",
+          "sha256": "acdb318f94624517c8cdb3c925c7a2e8b34c65e8ca02b301777c51eea9f0f73c"
+        },
+        {
+          "directory": "unsloth",
+          "name": "unsloth",
+          "description": "Expert guidance for fast fine-tuning with Unsloth - 2-5x faster training, 50-80% less memory, LoRA/QLoRA optimization",
+          "sha256": "ac7f1d1f87d08d7f8713f07c1f6522268b814acea850f97bc986e00f8b461bc3"
+        },
+        {
+          "directory": "nnsight-remote-interpretability",
+          "name": "nnsight-remote-interpretability",
+          "description": "Provides guidance for interpreting and manipulating neural network internals using nnsight with optional NDIF remote execution. Use when needing to run interpretability experiments on massive models (70B+) without local GPU resources, or when working with any PyTorch architecture.",
+          "sha256": "f79dc9daf99c4ffbcb82072b4f162c296e4365dbb2fe6985e77be215ba0c814c"
+        },
+        {
+          "directory": "pyvene-interventions",
+          "name": "pyvene-interventions",
+          "description": "Provides guidance for performing causal interventions on PyTorch models using pyvene's declarative intervention framework. Use when conducting causal tracing, activation patching, interchange intervention training, or testing causal hypotheses about model behavior.",
+          "sha256": "cc26be84bdf23355f63cf103847a13618122157d17448be6ea16f94f3338f4d1"
+        },
+        {
+          "directory": "sparse-autoencoder-training",
+          "name": "sparse-autoencoder-training",
+          "description": "Provides guidance for training and analyzing Sparse Autoencoders (SAEs) using SAELens to decompose neural network activations into interpretable features. Use when discovering interpretable features, analyzing superposition, or studying monosemantic representations in language models.",
+          "sha256": "3af1fa0e513a96c953f4fbd28b1a6cd764fa9c27e512c6f0cfd2b80c2a1706ae"
+        },
+        {
+          "directory": "transformer-lens-interpretability",
+          "name": "transformer-lens-interpretability",
+          "description": "Provides guidance for mechanistic interpretability research using TransformerLens to inspect and manipulate transformer internals via HookPoints and activation caching. Use when reverse-engineering model algorithms, studying attention patterns, or performing activation patching experiments.",
+          "sha256": "9ac5a790a59f46e430a9015a1e8c52338666f3426e36085c4ef38665b10b4e24"
+        },
+        {
+          "directory": "nemo-curator",
+          "name": "nemo-curator",
+          "description": "GPU-accelerated data curation for LLM training. Supports text/image/video/audio. Features fuzzy deduplication (16× faster), quality filtering (30+ heuristics), semantic deduplication, PII redaction, NSFW detection. Scales across GPUs with RAPIDS. Use for preparing high-quality training datasets, cleaning web data, or deduplicating large corpora.",
+          "sha256": "d8586e21ecd4df1a32371f8d86746f8fbd88358f5dc8957e5dd91a473d2ab484"
+        },
+        {
+          "directory": "ray-data",
+          "name": "ray-data",
+          "description": "Scalable data processing for ML workloads. Streaming execution across CPU/GPU, supports Parquet/CSV/JSON/images. Integrates with Ray Train, PyTorch, TensorFlow. Scales from single machine to 100s of nodes. Use for batch inference, data preprocessing, multi-modal data loading, or distributed ETL pipelines.",
+          "sha256": "bcc73b3341dca18c59cad092cb6dedb7ac0bf0bde80467a039921ac0c02256c3"
+        },
+        {
+          "directory": "grpo-rl-training",
+          "name": "grpo-rl-training",
+          "description": "Expert guidance for GRPO/RL fine-tuning with TRL for reasoning and task-specific model training",
+          "sha256": "c9b771c280840f12d0e98749250c35df4a83a21f95465c41e8ae13f0229ecb40"
+        },
+        {
+          "directory": "miles-rl-training",
+          "name": "miles-rl-training",
+          "description": "Provides guidance for enterprise-grade RL training using miles, a production-ready fork of slime. Use when training large MoE models with FP8/INT4, needing train-inference alignment, or requiring speculative RL for maximum throughput.",
+          "sha256": "cbf610faa37bfb97fc06a7d6a4c748867c29e4b4c79f1ae109662af5245a106e"
+        },
+        {
+          "directory": "openrlhf-training",
+          "name": "openrlhf-training",
+          "description": "High-performance RLHF framework with Ray+vLLM acceleration. Use for PPO, GRPO, RLOO, DPO training of large models (7B-70B+). Built on Ray, vLLM, ZeRO-3. 2× faster than DeepSpeedChat with distributed architecture and GPU resource sharing.",
+          "sha256": "eb9da6a1a81c492fb143cde0714f355ab042fcfe967b31bdb1fc78a5cb0e761f"
+        },
+        {
+          "directory": "simpo-training",
+          "name": "simpo-training",
+          "description": "Simple Preference Optimization for LLM alignment. Reference-free alternative to DPO with better performance (+6.4 points on AlpacaEval 2.0). No reference model needed, more efficient than DPO. Use for preference alignment when want simpler, faster training than DPO/PPO.",
+          "sha256": "2a74bd2378857c520066fbe84fc0c6c556d0fa0b8c4afde1eab1c0abfb51ed8a"
+        },
+        {
+          "directory": "slime-rl-training",
+          "name": "slime-rl-training",
+          "description": "Provides guidance for LLM post-training with RL using slime, a Megatron+SGLang framework. Use when training GLM models, implementing custom data generation workflows, or needing tight Megatron-LM integration for RL scaling.",
+          "sha256": "117c8fd2d57d878e45c698f9f0485326ed4630aeaec761aa1222d7a36458cc07"
+        },
+        {
+          "directory": "torchforge-rl-training",
+          "name": "torchforge-rl-training",
+          "description": "Provides guidance for PyTorch-native agentic RL using torchforge, Meta's library separating infra from algorithms. Use when you want clean RL abstractions, easy algorithm experimentation, or scalable training with Monarch and TorchTitan.",
+          "sha256": "809da22c47d5caadbcca9d3db7e82e227c174dbaa98f4a01cf2a678ffaffcbf0"
+        },
+        {
+          "directory": "fine-tuning-with-trl",
+          "name": "fine-tuning-with-trl",
+          "description": "Fine-tune LLMs using reinforcement learning with TRL - SFT for instruction tuning, DPO for preference alignment, PPO/GRPO for reward optimization, and reward model training. Use when need RLHF, align model with preferences, or train from human feedback. Works with HuggingFace Transformers.",
+          "sha256": "d68f78ad741627ce7dcdf2ce78c73c8cf31d23db7d89555e0bdd0cd35c413811"
+        },
+        {
+          "directory": "verl-rl-training",
+          "name": "verl-rl-training",
+          "description": "Provides guidance for training LLMs with reinforcement learning using verl (Volcano Engine RL). Use when implementing RLHF, GRPO, PPO, or other RL algorithms for LLM post-training at scale with flexible infrastructure backends.",
+          "sha256": "1167e2b2994c9b0780edc44d5bc3a3eef69dc816af08af8f28ef9c19163d1285"
+        },
+        {
+          "directory": "constitutional-ai",
+          "name": "constitutional-ai",
+          "description": "Anthropic's method for training harmless AI through self-improvement. Two-phase approach - supervised learning with self-critique/revision, then RLAIF (RL from AI Feedback). Use for safety alignment, reducing harmful outputs without human labels. Powers Claude's safety system.",
+          "sha256": "186267074ebdae7d3f9a5c8fb1505536c31bbe7ffba5fd18a052f8258d2005c0"
+        },
+        {
+          "directory": "llamaguard",
+          "name": "llamaguard",
+          "description": "Meta's 7-8B specialized moderation model for LLM input/output filtering. 6 safety categories - violence/hate, sexual content, weapons, substances, self-harm, criminal planning. 94-95% accuracy. Deploy with vLLM, HuggingFace, Sagemaker. Integrates with NeMo Guardrails.",
+          "sha256": "80c5afb39cb153d82e08dca44fbd3ea75a5e950b8bef65c2c1af8bbbe9ef3992"
+        },
+        {
+          "directory": "nemo-guardrails",
+          "name": "nemo-guardrails",
+          "description": "NVIDIA's runtime safety framework for LLM applications. Features jailbreak detection, input/output validation, fact-checking, hallucination detection, PII filtering, toxicity detection. Uses Colang 2.0 DSL for programmable rails. Production-ready, runs on T4 GPU.",
+          "sha256": "d0d91892eaba80cf829ef6bb1b37f3b5fa8cc31ba1fa89d162ab380b90ca2762"
+        },
+        {
+          "directory": "prompt-guard",
+          "name": "prompt-guard",
+          "description": "Meta's 86M prompt injection and jailbreak detector. Filters malicious prompts and third-party data for LLM apps. 99%+ TPR, <1% FPR. Fast (<2ms GPU). Multilingual (8 languages). Deploy with HuggingFace or batch processing for RAG security.",
+          "sha256": "0291e30b5549f0398f4bbe72f8918f16eced4c75d45dfd7c87648f72dc97ecce"
+        },
+        {
+          "directory": "huggingface-accelerate",
+          "name": "huggingface-accelerate",
+          "description": "Simplest distributed training API. 4 lines to add distributed support to any PyTorch script. Unified API for DeepSpeed/FSDP/Megatron/DDP. Automatic device placement, mixed precision (FP16/BF16/FP8). Interactive config, single launch command. HuggingFace ecosystem standard.",
+          "sha256": "e94cea7a174f395df02d935065fe05db8ecb637c52e443b6380c703963758d7a"
+        },
+        {
+          "directory": "deepspeed",
+          "name": "deepspeed",
+          "description": "Expert guidance for distributed training with DeepSpeed - ZeRO optimization stages, pipeline parallelism, FP16/BF16/FP8, 1-bit Adam, sparse attention",
+          "sha256": "8c2221b797e650a933800cfa45282a70caca20aaa85cbcece6e16acf1020dc39"
+        },
+        {
+          "directory": "training-llms-megatron",
+          "name": "training-llms-megatron",
+          "description": "Trains large language models (2B-462B parameters) using NVIDIA Megatron-Core with advanced parallelism strategies. Use when training models >1B parameters, need maximum GPU efficiency (47% MFU on H100), or require tensor/pipeline/sequence/context/expert parallelism. Production-ready framework used for Nemotron, LLaMA, DeepSeek.",
+          "sha256": "6e69257341b9ee01b22a46905e93f6fe2339b9f8147c7f77da46be7b366b6556"
+        },
+        {
+          "directory": "pytorch-fsdp2",
+          "name": "pytorch-fsdp2",
+          "description": "Adds PyTorch FSDP2 (fully_shard) to training scripts with correct init, sharding, mixed precision/offload config, and distributed checkpointing. Use when models exceed single-GPU memory or when you need DTensor-based sharding with DeviceMesh.",
+          "sha256": "b540043bd17d741840843df2f76d556d41be29c82a2acd85565ce2b1ce088a50"
+        },
+        {
+          "directory": "ray-train",
+          "name": "ray-train",
+          "description": "Distributed training orchestration across clusters. Scales PyTorch/TensorFlow/HuggingFace from laptop to 1000s of nodes. Built-in hyperparameter tuning with Ray Tune, fault tolerance, elastic scaling. Use when training massive models across multiple machines or running distributed hyperparameter sweeps.",
+          "sha256": "7f88c141557e3f0cc5b456571d1ae99bef4161a9c1765bc725847cfbd0fb1170"
+        },
+        {
+          "directory": "lambda-labs-gpu-cloud",
+          "name": "lambda-labs-gpu-cloud",
+          "description": "Reserved and on-demand GPU cloud instances for ML training and inference. Use when you need dedicated GPU instances with simple SSH access, persistent filesystems, or high-performance multi-node clusters for large-scale training.",
+          "sha256": "9d1dc3fcb83bf0de14717e58c13f49989b2bc307b12febcf040ef9d28fedc0a7"
+        },
+        {
+          "directory": "modal-serverless-gpu",
+          "name": "modal-serverless-gpu",
+          "description": "Serverless GPU cloud platform for running ML workloads. Use when you need on-demand GPU access without infrastructure management, deploying ML models as APIs, or running batch jobs with automatic scaling.",
+          "sha256": "219757503f84684534b3efe5616822ad17e6dc5c6cad127e6b46033a429d38ba"
+        },
+        {
+          "directory": "skypilot-multi-cloud-orchestration",
+          "name": "skypilot-multi-cloud-orchestration",
+          "description": "Multi-cloud orchestration for ML workloads with automatic cost optimization. Use when you need to run training or batch jobs across multiple clouds, leverage spot instances with auto-recovery, or optimize GPU costs across providers.",
+          "sha256": "de1be4556d8a8f7929003ca4b672e5fbb755588b1e95068973896b63d3034965"
+        },
+        {
+          "directory": "awq-quantization",
+          "name": "awq-quantization",
+          "description": "Activation-aware weight quantization for 4-bit LLM compression with 3x speedup and minimal accuracy loss. Use when deploying large models (7B-70B) on limited GPU memory, when you need faster inference than GPTQ with better accuracy preservation, or for instruction-tuned and multimodal models. MLSys 2024 Best Paper Award winner.",
+          "sha256": "9a875e53113c11b00ab417fc393eb504f8be97d50c2e6901c762b991388bf717"
+        },
+        {
+          "directory": "quantizing-models-bitsandbytes",
+          "name": "quantizing-models-bitsandbytes",
+          "description": "Quantizes LLMs to 8-bit or 4-bit for 50-75% memory reduction with minimal accuracy loss. Use when GPU memory is limited, need to fit larger models, or want faster inference. Supports INT8, NF4, FP4 formats, QLoRA training, and 8-bit optimizers. Works with HuggingFace Transformers.",
+          "sha256": "0a68e96c760b0ba561437328211a8405b4db422e9bad92415219abf91f87f849"
+        },
+        {
+          "directory": "optimizing-attention-flash",
+          "name": "optimizing-attention-flash",
+          "description": "Optimizes transformer attention with Flash Attention for 2-4x speedup and 10-20x memory reduction. Use when training/running transformers with long sequences (>512 tokens), encountering GPU memory issues with attention, or need faster inference. Supports PyTorch native SDPA, flash-attn library, H100 FP8, and sliding window attention.",
+          "sha256": "e0c1da83766332e0f3db4bcca954c3a70be399632758dcec2680aa82e236438d"
+        },
+        {
+          "directory": "gguf-quantization",
+          "name": "gguf-quantization",
+          "description": "GGUF format and llama.cpp quantization for efficient CPU/GPU inference. Use when deploying models on consumer hardware, Apple Silicon, or when needing flexible quantization from 2-8 bit without GPU requirements.",
+          "sha256": "11016e03b2b53c9a981f1ef7df96b078daf9bc929126ccf36377b86bb7025224"
+        },
+        {
+          "directory": "gptq",
+          "name": "gptq",
+          "description": "Post-training 4-bit quantization for LLMs with minimal accuracy loss. Use for deploying large models (70B, 405B) on consumer GPUs, when you need 4× memory reduction with <2% perplexity degradation, or for faster inference (3-4× speedup) vs FP16. Integrates with transformers and PEFT for QLoRA fine-tuning.",
+          "sha256": "ce19de416afa03a0e6a764c9cb8b8ba9a0b94812b9de1ad5a0c2cb2932009f28"
+        },
+        {
+          "directory": "hqq-quantization",
+          "name": "hqq-quantization",
+          "description": "Half-Quadratic Quantization for LLMs without calibration data. Use when quantizing models to 4/3/2-bit precision without needing calibration datasets, for fast quantization workflows, or when deploying with vLLM or HuggingFace Transformers.",
+          "sha256": "4feba64227f6db505044663cd5432bf9c0599c5c8984d94d3b2d1598711a1f80"
+        },
+        {
+          "directory": "ml-training-recipes",
+          "name": "ml-training-recipes",
+          "description": "Battle-tested PyTorch training recipes for all domains — LLMs, vision, diffusion, medical imaging, protein/drug discovery, spatial omics, genomics. Covers training loops, optimizer selection (AdamW, Muon), LR scheduling, mixed precision, debugging, and systematic experimentation. Use when training or fine-tuning neural networks, debugging loss spikes or OOM, choosing architectures, or optimizing GPU throughput.",
+          "sha256": "1cb661b0d3bac57ffed65075707a9079ac23123a5a597700e85c05e03e166a57"
+        },
+        {
+          "directory": "evaluating-code-models",
+          "name": "evaluating-code-models",
+          "description": "Evaluates code generation models across HumanEval, MBPP, MultiPL-E, and 15+ benchmarks with pass@k metrics. Use when benchmarking code models, comparing coding abilities, testing multi-language support, or measuring code generation quality. Industry standard from BigCode Project used by HuggingFace leaderboards.",
+          "sha256": "7c46e8eb3ca8d4f51769162d16d87a7dff5ec0c4609131fd3c62fcb463522874"
+        },
+        {
+          "directory": "evaluating-llms-harness",
+          "name": "evaluating-llms-harness",
+          "description": "Evaluates LLMs across 60+ academic benchmarks (MMLU, HumanEval, GSM8K, TruthfulQA, HellaSwag). Use when benchmarking model quality, comparing models, reporting academic results, or tracking training progress. Industry standard used by EleutherAI, HuggingFace, and major labs. Supports HuggingFace, vLLM, APIs.",
+          "sha256": "891b77bc09118393f9bd1235404ee3f0cf412f56e57dc4b454e2fbd8fd507bc3"
+        },
+        {
+          "directory": "nemo-evaluator-sdk",
+          "name": "nemo-evaluator-sdk",
+          "description": "Evaluates LLMs across 100+ benchmarks from 18+ harnesses (MMLU, HumanEval, GSM8K, safety, VLM) with multi-backend execution. Use when needing scalable evaluation on local Docker, Slurm HPC, or cloud platforms. NVIDIA's enterprise-grade platform with container-first architecture for reproducible benchmarking.",
+          "sha256": "97bc3483974c2b930acf3f46e21c865e1b27e92359e19bdb465515d9e86ff10f"
+        },
+        {
+          "directory": "llama-cpp",
+          "name": "llama-cpp",
+          "description": "Runs LLM inference on CPU, Apple Silicon, and consumer GPUs without NVIDIA hardware. Use for edge deployment, M1/M2/M3 Macs, AMD/Intel GPUs, or when CUDA is unavailable. Supports GGUF quantization (1.5-8 bit) for reduced memory and 4-10× speedup vs PyTorch on CPU.",
+          "sha256": "d74caa45483f5b3c6bd6267e39b444627989ff90fdb84b6c2e7c3da4ddf143ef"
+        },
+        {
+          "directory": "sglang",
+          "name": "sglang",
+          "description": "Fast structured generation and serving for LLMs with RadixAttention prefix caching. Use for JSON/regex outputs, constrained decoding, agentic workflows with tool calls, or when you need 5× faster inference than vLLM with prefix sharing. Powers 300,000+ GPUs at xAI, AMD, NVIDIA, and LinkedIn.",
+          "sha256": "05e664a43bb82df2363ef22ceba81a41394a2b819c3367b2413f661485085c8f"
+        },
+        {
+          "directory": "tensorrt-llm",
+          "name": "tensorrt-llm",
+          "description": "Optimizes LLM inference with NVIDIA TensorRT for maximum throughput and lowest latency. Use for production deployment on NVIDIA GPUs (A100/H100), when you need 10-100x faster inference than PyTorch, or for serving models with quantization (FP8/INT4), in-flight batching, and multi-GPU scaling.",
+          "sha256": "13f8e09b3e05b2167919011dfa8a44e067c7e0563a1e7dc01c26752cf85da11f"
+        },
+        {
+          "directory": "serving-llms-vllm",
+          "name": "serving-llms-vllm",
+          "description": "Serves LLMs with high throughput using vLLM's PagedAttention and continuous batching. Use when deploying production LLM APIs, optimizing inference latency/throughput, or serving models with limited GPU memory. Supports OpenAI-compatible endpoints, quantization (GPTQ/AWQ/FP8), and tensor parallelism.",
+          "sha256": "57eaf97e982fe758b6fd0ef2281b6961940e4a1c8258f303b0ce02d55d0636c6"
+        },
+        {
+          "directory": "mlflow",
+          "name": "mlflow",
+          "description": "Track ML experiments, manage model registry with versioning, deploy models to production, and reproduce experiments with MLflow - framework-agnostic ML lifecycle platform",
+          "sha256": "36d2581f7d8beb8b27f66bbef5c94df7e9604b917c3aa15e4183a48a2b1f3f96"
+        },
+        {
+          "directory": "experiment-tracking-swanlab",
+          "name": "experiment-tracking-swanlab",
+          "description": "Provides guidance for experiment tracking with SwanLab. Use when you need open-source run tracking, local or self-hosted dashboards, and lightweight media logging for ML workflows.",
+          "sha256": "14b0f74e6383e4e43cc78785706b43f0343801ba96c14b56284142203be48eff"
+        },
+        {
+          "directory": "tensorboard",
+          "name": "tensorboard",
+          "description": "Visualize training metrics, debug models with histograms, compare experiments, visualize model graphs, and profile performance with TensorBoard - Google's ML visualization toolkit",
+          "sha256": "717c4b05f88bbc888d54cc51fa390ae225d687b3b86fb616e36cc7fc26108020"
+        },
+        {
+          "directory": "weights-and-biases",
+          "name": "weights-and-biases",
+          "description": "Track ML experiments with automatic logging, visualize training in real-time, optimize hyperparameters with sweeps, and manage model registry with W&B - collaborative MLOps platform",
+          "sha256": "3cd5daa7cad70d97c96b2d6fdf8d0fc1ed8a97b1750c4e013e2405389baed3b6"
+        },
+        {
+          "directory": "evolving-ai-agents",
+          "name": "evolving-ai-agents",
+          "description": "Provides guidance for automatically evolving and optimizing AI agents across any domain using LLM-driven evolution algorithms. Use when building self-improving agents, optimizing agent prompts and skills against benchmarks, or implementing automated agent evaluation loops.",
+          "sha256": "6477f6efbbf3541ce3dfccf6665f5cdf6f241e47dcc3b32787e3e49b90223dbc"
+        },
+        {
+          "directory": "autogpt-agents",
+          "name": "autogpt-agents",
+          "description": "Autonomous AI agent platform for building and deploying continuous agents. Use when creating visual workflow agents, deploying persistent autonomous agents, or building complex multi-step AI automation systems.",
+          "sha256": "4b16c070da9966e3e71a8f5324d7b1b2d4ddd68a3df8b27305b1a19b841f62b3"
+        },
+        {
+          "directory": "crewai-multi-agent",
+          "name": "crewai-multi-agent",
+          "description": "Multi-agent orchestration framework for autonomous AI collaboration. Use when building teams of specialized agents working together on complex tasks, when you need role-based agent collaboration with memory, or for production workflows requiring sequential/hierarchical execution. Built without LangChain dependencies for lean, fast execution.",
+          "sha256": "8760f968af1118e3dde5bc8443613be5ef7046a5639d26079d596fcf6d2483ff"
+        },
+        {
+          "directory": "langchain",
+          "name": "langchain",
+          "description": "Framework for building LLM-powered applications with agents, chains, and RAG. Supports multiple providers (OpenAI, Anthropic, Google), 500+ integrations, ReAct agents, tool calling, memory management, and vector store retrieval. Use for building chatbots, question-answering systems, autonomous agents, or RAG applications. Best for rapid prototyping and production deployments.",
+          "sha256": "d47635059ac1a1a369ee6169f68f1d02e95ca201f2394a902fe66a30b1e35e65"
+        },
+        {
+          "directory": "llamaindex",
+          "name": "llamaindex",
+          "description": "Data framework for building LLM applications with RAG. Specializes in document ingestion (300+ connectors), indexing, and querying. Features vector indices, query engines, agents, and multi-modal support. Use for document Q&A, chatbots, knowledge retrieval, or building RAG pipelines. Best for data-centric LLM applications.",
+          "sha256": "a603d319831beb1e46efd9299532b2462ee0d0cf01d7aa8928bd21763a3d9760"
+        },
+        {
+          "directory": "chroma",
+          "name": "chroma",
+          "description": "Open-source embedding database for AI applications. Store embeddings and metadata, perform vector and full-text search, filter by metadata. Simple 4-function API. Scales from notebooks to production clusters. Use for semantic search, RAG applications, or document retrieval. Best for local development and open-source projects.",
+          "sha256": "834733e201d4f7d6c20089c93d13c945d7a62b6581d55631546a5ad74b9ec164"
+        },
+        {
+          "directory": "faiss",
+          "name": "faiss",
+          "description": "Facebook's library for efficient similarity search and clustering of dense vectors. Supports billions of vectors, GPU acceleration, and various index types (Flat, IVF, HNSW). Use for fast k-NN search, large-scale vector retrieval, or when you need pure similarity search without metadata. Best for high-performance applications.",
+          "sha256": "79a494b9212c73810d53527800c69f80acd6aa1907fca8c614c69583cac76e89"
+        },
+        {
+          "directory": "pinecone",
+          "name": "pinecone",
+          "description": "Managed vector database for production AI applications. Fully managed, auto-scaling, with hybrid search (dense + sparse), metadata filtering, and namespaces. Low latency (<100ms p95). Use for production RAG, recommendation systems, or semantic search at scale. Best for serverless, managed infrastructure.",
+          "sha256": "69b0566e8d749acdad2a805ed6980947e5458c96b41bd405e520f2006ff0e7fb"
+        },
+        {
+          "directory": "qdrant-vector-search",
+          "name": "qdrant-vector-search",
+          "description": "High-performance vector similarity search engine for RAG and semantic search. Use when building production RAG systems requiring fast nearest neighbor search, hybrid search with filtering, or scalable vector storage with Rust-powered performance.",
+          "sha256": "3a45489baf49c375883694ec78d6a9b283533a352e8d47cf630332faff83a231"
+        },
+        {
+          "directory": "sentence-transformers",
+          "name": "sentence-transformers",
+          "description": "Framework for state-of-the-art sentence, text, and image embeddings. Provides 5000+ pre-trained models for semantic similarity, clustering, and retrieval. Supports multilingual, domain-specific, and multimodal models. Use for generating embeddings for RAG, semantic search, or similarity tasks. Best for production embedding generation.",
+          "sha256": "fca19457be4e78f0e3689284d4fbde649ddf9af0d3bba52d2ac1fb470a4c1bd8"
+        },
+        {
+          "directory": "dspy",
+          "name": "dspy",
+          "description": "Build complex AI systems with declarative programming, optimize prompts automatically, create modular RAG systems and agents with DSPy - Stanford NLP's framework for systematic LM programming",
+          "sha256": "cd01cee93a2228c199c23e77047e4444b0a6eeddd12dcf14104ca2a5de3fa8e2"
+        },
+        {
+          "directory": "guidance",
+          "name": "guidance",
+          "description": "Control LLM output with regex and grammars, guarantee valid JSON/XML/code generation, enforce structured formats, and build multi-step workflows with Guidance - Microsoft Research's constrained generation framework",
+          "sha256": "2c7028001bf36a8a6bc1020d646a1fbad29c93f92f7706c437bde858e9616c71"
+        },
+        {
+          "directory": "instructor",
+          "name": "instructor",
+          "description": "Extract structured data from LLM responses with Pydantic validation, retry failed extractions automatically, parse complex JSON with type safety, and stream partial results with Instructor - battle-tested structured output library",
+          "sha256": "7be950beb848b05aa4f41e61cfe27b162cad4a4d029d0abe13401aa743bab794"
+        },
+        {
+          "directory": "outlines",
+          "name": "outlines",
+          "description": "Guarantee valid JSON/XML/code structure during generation, use Pydantic models for type-safe outputs, support local models (Transformers, vLLM), and maximize inference speed with Outlines - dottxt.ai's structured generation library",
+          "sha256": "1a797a1bb4d7fae753e4fbf1895beb36f63b8e75c7fba50e940cd1ef1a372574"
+        },
+        {
+          "directory": "langsmith-observability",
+          "name": "langsmith-observability",
+          "description": "LLM observability platform for tracing, evaluation, and monitoring. Use when debugging LLM applications, evaluating model outputs against datasets, monitoring production systems, or building systematic testing pipelines for AI applications.",
+          "sha256": "3611688a297b95bd8695cdaa9e9f12db4c7cda6c94a4ae82e55f99fa6cbf7f53"
+        },
+        {
+          "directory": "phoenix-observability",
+          "name": "phoenix-observability",
+          "description": "Open-source AI observability platform for LLM tracing, evaluation, and monitoring. Use when debugging LLM applications with detailed traces, running evaluations on datasets, or monitoring production AI systems with real-time insights.",
+          "sha256": "111bd54f145ca57360f7e6f08f95202e937ac134e3dbf486a51cbaa008546e2b"
+        },
+        {
+          "directory": "audiocraft-audio-generation",
+          "name": "audiocraft-audio-generation",
+          "description": "PyTorch library for audio generation including text-to-music (MusicGen) and text-to-sound (AudioGen). Use when you need to generate music from text descriptions, create sound effects, or perform melody-conditioned music generation.",
+          "sha256": "3f9efaebd7331bea86022a101329074c6eab8af2d33591e691c565fcba641a5f"
+        },
+        {
+          "directory": "blip-2-vision-language",
+          "name": "blip-2-vision-language",
+          "description": "Vision-language pre-training framework bridging frozen image encoders and LLMs. Use when you need image captioning, visual question answering, image-text retrieval, or multimodal chat with state-of-the-art zero-shot performance.",
+          "sha256": "38227abdcb742add1284ba117881e899c020b7ebb5c39b5202a97d60c3ad8d3e"
+        },
+        {
+          "directory": "clip",
+          "name": "clip",
+          "description": "OpenAI's model connecting vision and language. Enables zero-shot image classification, image-text matching, and cross-modal retrieval. Trained on 400M image-text pairs. Use for image search, content moderation, or vision-language tasks without fine-tuning. Best for general-purpose image understanding.",
+          "sha256": "9fcacf1c041d71ef1e61c7cac2bb7a2c42c3d19d6c2a0fc2e5f5a3c9641b7a3e"
+        },
+        {
+          "directory": "evaluating-cosmos-policy",
+          "name": "evaluating-cosmos-policy",
+          "description": "Evaluates NVIDIA Cosmos Policy on LIBERO and RoboCasa simulation environments. Use when setting up cosmos-policy for robot manipulation evaluation, running headless GPU evaluations with EGL rendering, or profiling inference latency on cluster or local GPU machines.",
+          "sha256": "31d6b4701fae46b0b9e9b281378eefbe0f4c37b5973dae56ee25a3b67f63d0b6"
+        },
+        {
+          "directory": "llava",
+          "name": "llava",
+          "description": "Large Language and Vision Assistant. Enables visual instruction tuning and image-based conversations. Combines CLIP vision encoder with Vicuna/LLaMA language models. Supports multi-turn image chat, visual question answering, and instruction following. Use for vision-language chatbots or image understanding tasks. Best for conversational image analysis.",
+          "sha256": "e2c915ece2f3e50ea110320b7a364dd36361d3010e102e800416dfa3b4299745"
+        },
+        {
+          "directory": "fine-tuning-serving-openpi",
+          "name": "fine-tuning-serving-openpi",
+          "description": "Fine-tune and serve Physical Intelligence OpenPI models (pi0, pi0-fast, pi0.5) using JAX or PyTorch backends for robot policy inference across ALOHA, DROID, and LIBERO environments. Use when adapting pi0 models to custom datasets, converting JAX checkpoints to PyTorch, running policy inference servers, or debugging norm stats and GPU memory issues.",
+          "sha256": "60af709a253bd745330e43067b22667b932a393e65a3cde6660a25d0ffbe4742"
+        },
+        {
+          "directory": "fine-tuning-openvla-oft",
+          "name": "fine-tuning-openvla-oft",
+          "description": "Fine-tunes and evaluates OpenVLA-OFT and OpenVLA-OFT+ policies for robot action generation with continuous action heads, LoRA adaptation, and FiLM conditioning on LIBERO simulation and ALOHA real-world setups. Use when reproducing OpenVLA-OFT paper results, training custom VLA action heads (L1 or diffusion), deploying server-client inference for ALOHA, or debugging normalization, LoRA merge, and cross-GPU issues.",
+          "sha256": "07492556c7479f18d353c80a4f92450fbe301811e664fc45d0070fcdd9587c9e"
+        },
+        {
+          "directory": "segment-anything-model",
+          "name": "segment-anything-model",
+          "description": "Foundation model for image segmentation with zero-shot transfer. Use when you need to segment any object in images using points, boxes, or masks as prompts, or automatically generate all object masks in an image.",
+          "sha256": "6ac5c2f96cf7d0ae5f787164678701266930129aa06cc21818f20f77dacb6a71"
+        },
+        {
+          "directory": "stable-diffusion-image-generation",
+          "name": "stable-diffusion-image-generation",
+          "description": "State-of-the-art text-to-image generation with Stable Diffusion models via HuggingFace Diffusers. Use when generating images from text prompts, performing image-to-image translation, inpainting, or building custom diffusion pipelines.",
+          "sha256": "816dce0d04b2e2ddc1510a5aaf3e545778f4c59f7329af689dc9941bbbebca37"
+        },
+        {
+          "directory": "whisper",
+          "name": "whisper",
+          "description": "OpenAI's general-purpose speech recognition model. Supports 99 languages, transcription, translation to English, and language identification. Six model sizes from tiny (39M params) to large (1550M params). Use for speech-to-text, podcast transcription, or multilingual audio processing. Best for robust, multilingual ASR.",
+          "sha256": "acce14621ec8060db480fade27896a1fba0c99ba037c07684b876cc31027276c"
+        },
+        {
+          "directory": "knowledge-distillation",
+          "name": "knowledge-distillation",
+          "description": "Compress large language models using knowledge distillation from teacher to student models. Use when deploying smaller models with retained performance, transferring GPT-4 capabilities to open-source models, or reducing inference costs. Covers temperature scaling, soft targets, reverse KLD, logit distillation, and MiniLLM training strategies.",
+          "sha256": "bc27086dc02840cebef4db34db4b8406b37ff349d6e2a52848646c8daf24ff3e"
+        },
+        {
+          "directory": "long-context",
+          "name": "long-context",
+          "description": "Extend context windows of transformer models using RoPE, YaRN, ALiBi, and position interpolation techniques. Use when processing long documents (32k-128k+ tokens), extending pre-trained models beyond original context limits, or implementing efficient positional encodings. Covers rotary embeddings, attention biases, interpolation methods, and extrapolation strategies for LLMs.",
+          "sha256": "6426eb21a38b8a314078292b8172d889b7f2b1a226901fcda78ac4d28a98a5e7"
+        },
+        {
+          "directory": "model-merging",
+          "name": "model-merging",
+          "description": "Merge multiple fine-tuned models using mergekit to combine capabilities without retraining. Use when creating specialized models by blending domain-specific expertise (math + coding + chat), improving performance beyond single models, or experimenting rapidly with model variants. Covers SLERP, TIES-Merging, DARE, Task Arithmetic, linear merging, and production deployment strategies.",
+          "sha256": "dfbcc6d6dfef57489ac69cb6f3a858783f16dff2ecfc72eb2fac168fd2ecc87d"
+        },
+        {
+          "directory": "model-pruning",
+          "name": "model-pruning",
+          "description": "Reduce LLM size and accelerate inference using pruning techniques like Wanda and SparseGPT. Use when compressing models without retraining, achieving 50% sparsity with minimal accuracy loss, or enabling faster inference on hardware accelerators. Covers unstructured pruning, structured pruning, N:M sparsity, magnitude pruning, and one-shot methods.",
+          "sha256": "aca913d834bc1e3d39bbfb75d0658d5a1b9acabf6511744719c5bab91bf306a8"
+        },
+        {
+          "directory": "moe-training",
+          "name": "moe-training",
+          "description": "Train Mixture of Experts (MoE) models using DeepSpeed or HuggingFace. Use when training large-scale models with limited compute (5× cost reduction vs dense models), implementing sparse architectures like Mixtral 8x7B or DeepSeek-V3, or scaling model capacity without proportional compute increase. Covers MoE architectures, routing mechanisms, load balancing, expert parallelism, and inference optimization.",
+          "sha256": "f13f184fe031c84700d72c15dd90161a96f3b48ab6b50b250e6b86cfc4c87354"
+        },
+        {
+          "directory": "speculative-decoding",
+          "name": "speculative-decoding",
+          "description": "Accelerate LLM inference using speculative decoding, Medusa multiple heads, and lookahead decoding techniques. Use when optimizing inference speed (1.5-3.6× speedup), reducing latency for real-time applications, or deploying models with limited compute. Covers draft models, tree-based attention, Jacobi iteration, parallel token generation, and production deployment strategies.",
+          "sha256": "d818b841ffe3e338569ab7caa0d54516f51c649e52fd1af2d5de5d0435b39f99"
+        },
+        {
+          "directory": "academic-plotting",
+          "name": "academic-plotting",
+          "description": "Generates publication-quality figures for ML papers from research context. Given a paper section or description, extracts system components and relationships to generate architecture diagrams via Gemini. Given experiment results or data, auto-selects chart type and generates data-driven figures via matplotlib/seaborn. Use when creating any figure for a conference paper.",
+          "sha256": "6613653d8109dcae36596b37d7414d5ae394a18f81543365222286d04485fd83"
+        },
+        {
+          "directory": "ml-paper-writing",
+          "name": "ml-paper-writing",
+          "description": "Write publication-ready ML/AI papers for NeurIPS, ICML, ICLR, ACL, AAAI, COLM. Use when drafting papers from research repos, structuring arguments, verifying citations, or preparing camera-ready submissions. For systems venues (OSDI, NSDI, ASPLOS, SOSP), use systems-paper-writing instead.",
+          "sha256": "96733e6d758642d792ed15b7c08eb90548d4775099368cd72a8312127f2fe911"
+        },
+        {
+          "directory": "presenting-conference-talks",
+          "name": "presenting-conference-talks",
+          "description": "Generates conference presentation slides (Beamer LaTeX PDF and editable PPTX) from a compiled paper with speaker notes and talk script. Use when preparing oral talks, spotlight presentations, or invited talks for ML and systems conferences.",
+          "sha256": "5fb6b8f9e5b7690dcb0d783ff1e07c6d3f6b950b8f1238e0672e1f3c53bad57f"
+        },
+        {
+          "directory": "systems-paper-writing",
+          "name": "systems-paper-writing",
+          "description": "Comprehensive guide for writing systems papers targeting OSDI, SOSP, ASPLOS, NSDI, and EuroSys. Provides paragraph-level structural blueprints, writing patterns, venue-specific checklists, reviewer guidelines, LaTeX templates, and conference deadlines. Use this skill for all systems conference paper writing.",
+          "sha256": "ee31b50b25192efcfcbe3252d7e15d88ec27bbd94817640b0357090f94c0e297"
+        },
+        {
+          "directory": "brainstorming-research-ideas",
+          "name": "brainstorming-research-ideas",
+          "description": "Guides researchers through structured ideation frameworks to discover high-impact research directions. Use when exploring new problem spaces, pivoting between projects, or seeking novel angles on existing work.",
+          "sha256": "8422a1a6dc0a88d05f02b9fbe0f8c2ae06a77024856d18125efa13d19d855d46"
+        },
+        {
+          "directory": "creative-thinking-for-research",
+          "name": "creative-thinking-for-research",
+          "description": "Applies cognitive science frameworks for creative thinking to CS and AI research ideation. Use when seeking genuinely novel research directions by leveraging combinatorial creativity, analogical reasoning, constraint manipulation, and other empirically grounded creative strategies.",
+          "sha256": "ec111f9236d7f9d72c895cebbf0f534ac93f4249172607559ad4bf92aefc5310"
+        },
+        {
+          "directory": "ara-compiler",
+          "name": "ara-compiler",
+          "description": "Compiles any research input — PDF papers, GitHub repositories, experiment logs, code directories, or raw notes — into a complete Agent-Native Research Artifact (ARA) with cognitive layer (claims, concepts, heuristics), physical layer (configs, code stubs), exploration graph, and grounded evidence. Use when ingesting a paper or codebase into a structured, machine-executable knowledge package, building an ARA from scratch, or converting research outputs into a falsifiable, agent-traversable form.",
+          "sha256": "747c2f17125ce136e8f75baf8803eb3b21ccc01246498a7f0bc4c01ec6d01d9a"
+        },
+        {
+          "directory": "ara-research-manager",
+          "name": "ara-research-manager",
+          "description": "Records research provenance as a post-task epilogue, scanning conversation history at the end of a coding or research session to extract decisions, experiments, dead ends, claims, heuristics, and pivots, and writing them into the ara/ directory with user-vs-AI provenance tags. Use as a session epilogue — never during execution — to maintain a faithful, auditable trace of how a research project actually evolved.",
+          "sha256": "f78da7627ac09a4be398ea4363fc7b8753b2dcb22bc961c5059395e33ef3ef2c"
+        },
+        {
+          "directory": "ara-rigor-reviewer",
+          "name": "ara-rigor-reviewer",
+          "description": "Performs ARA Seal Level 2 semantic epistemic review on Agent-Native Research Artifacts, scoring six dimensions (evidence relevance, falsifiability, scope calibration, argument coherence, exploration integrity, methodological rigor) and producing a constructive, severity-ranked report with a Strong Accept-to-Reject recommendation. Use after Level 1 structural validation passes, when an ARA needs an objective epistemic critique before publication or release.",
+          "sha256": "5a8169a5d069caf36a30e0106e523503ffba685215c3cd0067a72aa64a7e2dbb"
+        }
+      ]
+    },
+    {
+      "repo": "Weizhena/Deep-Research-skills",
+      "commit": "6ce38f60e3f8b22502c29873f96503a4e0c5addb",
+      "mode": "weizhena",
+      "skills": [
+        {
+          "directory": "research",
+          "name": "research",
+          "description": "Conduct preliminary research on a topic and generate research outline. For academic research, benchmark research, technology selection, etc.",
+          "sha256": "575073c5483454245d6c29ef8f12c77a0831b5d9eec0e98631129db1a6425671"
+        },
+        {
+          "directory": "research-add-fields",
+          "name": "research-add-fields",
+          "description": "Add field definitions to existing research outline.",
+          "sha256": "93757fb5ea7462de38206c0f2c18cb7726fe773137f6b7959d6587ae2f2bfcf9"
+        },
+        {
+          "directory": "research-add-items",
+          "name": "research-add-items",
+          "description": "Add items (research objects) to existing research outline.",
+          "sha256": "52195e187e55941525e6006709dacb0b409448717958af86e73cbf6682b9e616"
+        },
+        {
+          "directory": "research-deep",
+          "name": "research-deep",
+          "description": "Read research outline, launch independent agent for each item for deep research. Disable task output.",
+          "sha256": "8fcc496fb1af291d30a9aa70e005f33cfbe08c8fff1942fb50ff7c9979d532cb"
+        },
+        {
+          "directory": "research-report",
+          "name": "research-report",
+          "description": "Summarize deep research results into markdown report, cover all fields, skip uncertain values.",
+          "sha256": "3f338b814cda64564170b821eb9d9f597126639d8330b0d9b43dff9fbcbb945b"
+        }
+      ]
+    },
+    {
+      "repo": "WUBING2023/PaperSpine",
+      "commit": "f7e3dabaf499b2aef1eabdd1cd5d64f173d7dcc3",
+      "mode": "paper",
+      "skills": [
+        {
+          "directory": "paper-spine",
+          "name": "paper-spine",
+          "description": "Research, write, review and deliver evidence-bound papers in one task, with user choices, real files, editable outputs and same-task revision.",
+          "sha256": "a120a2f2c244010a8292761c837d59a51f8896747bba8fa0b23651002c803223"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    "K-Dense literature-review, peer-review and statistical-analysis replace Norman versions",
+    "K-Dense pytorch-lightning retained; Orchestra duplicate skipped",
+    "AERS internal skills load on demand; not individually registered",
+    "Weizhena Codex Chinese variant selected",
+    "PaperSpine Windows runtime requires its official Windows installer"
+  ]
+}
