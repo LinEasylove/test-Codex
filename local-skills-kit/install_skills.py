@@ -11,6 +11,25 @@ def run(*args):
 def sha(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
 
+def matches_recorded_source(md, expected):
+    """Accept CRLF checkout conversion only against the unchanged Git blob."""
+    if sha(md) == expected:
+        return True
+    raw = md.read_bytes()
+    try:
+        top = subprocess.check_output(
+            ['git', '-C', str(md.parent), 'rev-parse', '--show-toplevel'],
+            stderr=subprocess.DEVNULL, text=True).strip()
+        relative = md.resolve().relative_to(Path(top).resolve()).as_posix()
+        blob = subprocess.check_output(
+            ['git', '-C', top, 'show', 'HEAD:' + relative],
+            stderr=subprocess.DEVNULL)
+    except (subprocess.CalledProcessError, ValueError, OSError):
+        return False
+    # Preserve the expected digest. Reject any change beyond LF/CRLF conversion.
+    return (hashlib.sha256(blob).hexdigest() == expected
+            and raw.replace(b'\r\n', b'\n') == blob.replace(b'\r\n', b'\n'))
+
 def fetch_source(group, vault):
     destination = vault / (group['repo'].replace('/', '--') + '--' + group['commit'][:12])
     if destination.exists():
@@ -23,7 +42,7 @@ def fetch_source(group, vault):
         print(f'Reuse source: {group["repo"]}', flush=True)
         return destination
     destination.parent.mkdir(parents=True, exist_ok=True)
-    run('git', 'clone', '--depth', '1', '--no-checkout',
+    run('git', 'clone', '-c', 'core.autocrlf=false', '--depth', '1', '--no-checkout',
         'https://github.com/' + group['repo'] + '.git', destination)
     head = subprocess.check_output(['git', '-C', str(destination), 'rev-parse', 'HEAD'], text=True).strip()
     if head != group['commit']:
@@ -129,7 +148,7 @@ def main():
             if not md.is_file():
                 raise RuntimeError(f'Missing source: {md}')
             # PaperSpine's deployed Linux SKILL.md differs from the source projection.
-            if item.get('sha256') and group['mode'] != 'paper' and sha(md) != item['sha256']:
+            if item.get('sha256') and group['mode'] != 'paper' and not matches_recorded_source(md, item['sha256']):
                 raise RuntimeError(f'Pinned skill content differs from recorded version: {md}')
             text = md.read_text(encoding='utf-8')
             if not text.startswith('---') or 'description:' not in text.split('---', 2)[1]:

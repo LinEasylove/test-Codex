@@ -76,3 +76,7 @@ Zotero 不属于十套安装清单，本机 Zotero 连接也需单独检查。
 - Orchestra-Research/AI-Research-SKILLs：97 个入口，版本 `773a52944ba4747a18bd4ae9ade53fff041adcbc`
 - Weizhena/Deep-Research-skills：5 个入口，版本 `6ce38f60e3f8b22502c29873f96503a4e0c5addb`
 - WUBING2023/PaperSpine：1 个入口，版本 `f7e3dabaf499b2aef1eabdd1cd5d64f173d7dcc3`
+
+## Windows 换行兼容
+
+Git for Windows 可能将 LF 转换为 CRLF。安装器保持原校验值，通过 Git 原始对象核验并仅接受换行差异；内容改动仍然拒绝。新下载的仓库关闭本仓库的 autocrlf 转换，不修改全局 Git 设置。
