@@ -3,6 +3,12 @@
 本工具面向 Windows 上的本机 Codex（VS Code Codex 扩展或 Codex CLI）。
 它不会改变 ChatGPT 网页对话，也不修改正在支持调查中的云环境配置。
 
+## Windows 双击安装
+
+在 GitHub 仓库首页选择 Code → Download ZIP，解压后打开 `local-skills-kit`，双击 `Install-Skills.cmd`。需要本机已安装 Git for Windows 与 Python 3.9 或更新版。脚本不会要求管理员权限，也不会自动替换不同内容的同名技能。
+
+安装后双击 `Verify-Skills.cmd` 检查文件，重新打开本机 Codex 会话确认实际加载。云端助手不能替代这一步本机执行。
+
 ## 安装
 
 1. 安装 Git for Windows、Python 3.9 或更新版，并重启 VS Code。
