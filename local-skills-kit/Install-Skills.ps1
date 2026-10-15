@@ -1,4 +1,4 @@
-param([switch]$Verify, [switch]$BackupExisting)
+param([switch]$Verify, [switch]$BackupExisting, [string]$Only)
 $ErrorActionPreference = 'Stop'
 Set-Location -LiteralPath $PSScriptRoot
 $Script = Join-Path $PSScriptRoot 'install_skills.py'
@@ -15,5 +15,6 @@ if (-not $Python) { throw 'Install Python 3.9+ for Windows, then reopen VS Code.
 $Options = @($Script)
 if ($Verify) { $Options += '--verify' }
 if ($BackupExisting) { $Options += '--backup-existing' }
+if ($Only) { $Options += @('--only', $Only) }
 if ($Python -eq 'py') { & py -3 @Options } else { & python @Options }
 if ($LASTEXITCODE -ne 0) { throw 'Installation or verification failed. Read the ERROR above; no automatic retries.' }

@@ -48,3 +48,9 @@ AERS 内部同名技能按需读取，避免重复注册。
 
 此说明与本机安装工具已准备好。GitHub 推送在本次尝试中被认证问题阻止；
 不能因为本地提交存在就声称远端工具已经发布。
+
+## PPT Master
+
+- 仓库：https://github.com/hugohe3/ppt-master/tree/8070d3df1f6f54b5fb60a9ae66e79c664f050212
+- 原始入口：skills/ppt-master/SKILL.md
+- 用于原生可编辑 PPT、模板、重建、动画等流程。仅阅读入口不表示 Python 依赖或外部服务已就绪。

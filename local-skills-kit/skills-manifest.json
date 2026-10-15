@@ -2068,6 +2068,21 @@
           "sha256": "a120a2f2c244010a8292761c837d59a51f8896747bba8fa0b23651002c803223"
         }
       ]
+    },
+    {
+      "repo": "hugohe3/ppt-master",
+      "commit": "8070d3df1f6f54b5fb60a9ae66e79c664f050212",
+      "mode": "normal",
+      "pip_requirements": "skills/ppt-master/requirements.txt",
+      "runtime_name": "ppt-master",
+      "skills": [
+        {
+          "directory": "ppt-master",
+          "name": "ppt-master",
+          "description": "AI-driven presentation workflow for generating editable PPTX decks and slides, reconstructing page visuals, creating reusable Brand/Style/Layout/Deck workspaces, filling native PPTX templates, and enhancing finished PPTX files. Use when the user asks to create, generate, reconstruct, regenerate, beautify, redesign, template, fill, or enhance a presentation, PPT, PPTX, slide deck, or courseware — including adding narration or animation to one — requests a presentation-authored narrated/self-running video, or mentions ppt-master.\n",
+          "sha256": "91a869f988e800314d18db483b66bc05d397f93bd1dbe50255bf83756ef5da14"
+        }
+      ]
     }
   ],
   "decisions": [

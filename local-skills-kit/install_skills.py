@@ -11,6 +11,23 @@ def run(*args):
 def sha(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
 
+def runtime_python(home, name):
+    env = home / '.codex' / 'skill-runtimes' / name
+    return env / ('Scripts/python.exe' if os.name == 'nt' else 'bin/python')
+
+def ensure_runtime(python, requirements):
+    env = python.parent.parent
+    stamp = env / 'requirements.sha256'
+    expected = sha(requirements)
+    if not python.is_file():
+        run(sys.executable, '-m', 'venv', env)
+    if not stamp.is_file() or stamp.read_text().strip() != expected:
+        run(python, '-m', 'pip', 'install', '-r', requirements)
+        run(python, '-m', 'pip', 'check')
+        stamp.write_text(expected, encoding='ascii')
+    else:
+        run(python, '-m', 'pip', 'check')
+
 def matches_recorded_source(md, expected):
     """Accept CRLF checkout conversion only against the unchanged Git blob."""
     if sha(md) == expected:
@@ -78,6 +95,9 @@ def wrapper(item, md, group):
     name = json.dumps(item['name'], ensure_ascii=False)
     description = json.dumps(item['description'], ensure_ascii=False)
     warning = ''
+    if group.get('runtime_python'):
+        warning += ('\nUse this isolated Python interpreter for the source helper scripts: '
+                    f'`{group["runtime_python"]}`. This environment contains the skill requirements.\n')
     if group['mode'] == 'research':
         warning = ('\nPreserve the user choice: for literature-review, peer-review and statistical-analysis, '
                    'load the corresponding registered K-Dense entries in the user .agents/skills directory. '
@@ -119,6 +139,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--home', type=Path, default=Path.home(), help='Local user home; default is your Windows user profile.')
     parser.add_argument('--verify', action='store_true', help='Check an existing installation without fetching sources.')
+    parser.add_argument('--only', help='Install or verify one named skill without reprocessing other collections.')
     parser.add_argument('--backup-existing', action='store_true', help='Explicitly authorize backing up and replacing different existing entries.')
     parser.add_argument('--source-map', type=Path, help=argparse.SUPPRESS)  # Offline test fixture paths.
     args = parser.parse_args()
@@ -129,9 +150,19 @@ def main():
     report = home / '.codex' / 'skill-bundles-verification.json'
     if args.verify:
         entries = json.loads(state.read_text(encoding='utf-8'))
+        if args.only:
+            entries = [item for item in entries if item['name'] == args.only]
+            if not entries: raise RuntimeError('Selected skill has not been installed: ' + args.only)
         verify_installed(target, entries, report)
         return
     manifest = json.loads((HERE / 'skills-manifest.json').read_text(encoding='utf-8'))
+    if args.only:
+        selected = []
+        for group in manifest['groups']:
+            items = [item for item in group['skills'] if item['name'] == args.only]
+            if items: selected.append({**group, 'skills': items})
+        if not selected: raise RuntimeError('Unknown skill: ' + args.only)
+        manifest['groups'] = selected
     all_items = [i for g in manifest['groups'] for i in g['skills']]
     names = [i['name'] for i in all_items]
     if len(names) != len(set(names)):
@@ -141,8 +172,16 @@ def main():
         raise RuntimeError('Git is required. Install Git for Windows, then restart VS Code.')
     print(f'Preparing {len(names)} entries from {len(manifest["groups"])} pinned repositories.', flush=True)
     pending = []
+    runtime_jobs = []
     for group in manifest['groups']:
         source = None if source_map else fetch_source(group, vault)
+        if group.get('pip_requirements'):
+            if sys.version_info < (3, 10): raise RuntimeError('ppt-master requires Python 3.10 or newer.')
+            interpreter = runtime_python(home, group['runtime_name'])
+            group['runtime_python'] = interpreter.as_posix()
+            requirements = (source / group['pip_requirements']) if source else Path(source_map[group['skills'][0]['name']]).parent / 'requirements.txt'
+            if not requirements.is_file(): raise RuntimeError('Missing requirements: ' + str(requirements))
+            runtime_jobs.append((interpreter, requirements))
         for item in group['skills']:
             md = Path(source_map[item['name']]) if source_map else source_md(source, group, item)
             if not md.is_file():
@@ -170,6 +209,8 @@ def main():
         print('\nExisting same-name skills detected. Nothing has been replaced:')
         for file in conflicts: print(file)
         raise RuntimeError('Review these conflicts first. Use --backup-existing only if you choose to replace them.')
+    for interpreter, requirements in runtime_jobs:
+        ensure_runtime(interpreter, requirements)
     if conflicts:
         backup = home / 'skill-backups' / ('local-skills-' + datetime.datetime.now().strftime('%Y%m%d-%H%M%S'))
         backup.mkdir(parents=True, exist_ok=False)
@@ -184,7 +225,9 @@ def main():
             shutil.rmtree(original)
         print('Verified backups:', backup)
     target.mkdir(parents=True, exist_ok=True)
-    entries = []
+    entries = json.loads(state.read_text(encoding='utf-8')) if args.only and state.exists() else []
+    replacing = {item['name'] for item, md, body in pending}
+    entries = [item for item in entries if item['name'] not in replacing]
     for item, md, body in pending:
         directory = target / item['name']
         directory.mkdir(exist_ok=True)

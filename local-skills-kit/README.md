@@ -20,7 +20,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Install-Skills.ps1
 ```
 
 ExecutionPolicy Bypass 只用于这次进程，不永久修改系统执行策略。
-安装程序从十个原始 GitHub 仓库拉取固定提交，并保留完整源目录和 AERS 子模块。
+安装程序从十一个原始 GitHub 仓库拉取固定提交，并保留完整源目录和 AERS 子模块。
 网络较慢时需要等待较大的仓库下载。失败后保留日志；不要循环重试不明错误。
 
 4. 安装成功后关闭原来的本机 Codex 会话，重新打开 VS Code/Codex 或开始新的本机会话。
@@ -56,7 +56,7 @@ Zotero 不属于十套安装清单，本机 Zotero 连接也需单独检查。
 
 ## 验证范围
 
-已在云端隔离测试目录验证：333 个入口的 YAML 元数据、原文件哈希、重复执行和冲突保护。
+已在云端隔离测试目录验证：334 个入口的 YAML 元数据、原文件哈希、重复执行和冲突保护。
 没有在用户 Windows 上执行，没有声称新本机 Codex 会话已加载这些入口。
 
 ## 后续新技能
@@ -64,7 +64,7 @@ Zotero 不属于十套安装清单，本机 Zotero 连接也需单独检查。
 新增技能需要同时加入 skills-manifest.json，并验证同名冲突和来源版本；重新运行安装器。
 不能仅把新文件写到某一个聊天工作区，就视为所有对话可用。
 
-## 十套清单
+## 十一套清单
 
 - Norman-bury/research-writing-skill：17 个入口，版本 `6f7959554b4614d879d79cb4ece9ed04a7c8a88c`
 - zLanqing/codex-claude-academic-skills：1 个入口，版本 `7ed6377f0efb6a38951b48ef03b19d996e454b1f`
@@ -80,3 +80,23 @@ Zotero 不属于十套安装清单，本机 Zotero 连接也需单独检查。
 ## Windows 换行兼容
 
 Git for Windows 可能将 LF 转换为 CRLF。安装器保持原校验值，通过 Git 原始对象核验并仅接受换行差异；内容改动仍然拒绝。新下载的仓库关闭本仓库的 autocrlf 转换，不修改全局 Git 设置。
+
+
+## 单独添加 PPT Master
+
+已有333个入口的用户，下载最新版工具包并解压后，双击 `Install-PPT-Master.cmd`。
+只添加 `ppt-master`，保留已安装的333个入口，不重新拉取全部仓库。
+
+源仓库：hugohe3/ppt-master，固定提交 `8070d3df1f6f54b5fb60a9ae66e79c664f050212`。
+其完整源文件、模板、工作流与脚本保留在用户 `.codex/skill-bundles`。
+其依赖安装在用户 `.codex/skill-runtimes/ppt-master` 独立虚拟环境中。
+安装入口会向 Codex 提供该虚拟环境的 Python 绝对路径。
+需要 Python 3.10+；API密钥和可选的图像生成、旁白服务应按具体任务另行配置。
+
+PowerShell方式：
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Install-Skills.ps1 -Only ppt-master
+```
+
+首次安装完成后，重开本机 Codex 会话，检查 `ppt-master` 是否在 Available skills 清单中。

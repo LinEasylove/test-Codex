@@ -1,6 +1,6 @@
 # 本机技能调用名清单
 
-共 333 个入口，内部参考模块不重复计数。
+共 334 个入口，内部参考模块不重复计数。
 
 ## Norman-bury/research-writing-skill
 
@@ -364,3 +364,7 @@
 ## WUBING2023/PaperSpine
 
 - `paper-spine`
+
+## hugohe3/ppt-master
+
+- `ppt-master`
